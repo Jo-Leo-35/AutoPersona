@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "answers": {
+    "product.brand": "JLab",
+    "product.model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+    "sales.price": 3990,
+    "sales.stock": 1,
+    "compliance.connectionType": "wireless",
+    "compliance.hasNCC": true,
+    "compliance.nccNumber": "CCAH24LPA380T2",
+    "compliance.hasBSMI": true,
+    "compliance.bsmiNumber": "R3B170",
+    "media.imagePaths": [
+      "demo-1.png"
+    ],
+    "media.confirmedProductImages": true,
+    "media.uploadAuthorized": true
+  },
+  "sources": {
+    "product.brand": {
+      "type": "user_message",
+      "value": "JLab",
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page"
+    },
+    "product.model": {
+      "type": "user_message",
+      "value": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page"
+    },
+    "sales.price": {
+      "type": "user_message",
+      "value": 3990,
+      "quote": "價格是3990",
+      "currency": "TWD"
+    },
+    "sales.stock": {
+      "type": "user_message",
+      "value": 1,
+      "quote": "庫存1"
+    },
+    "compliance.connectionType": {
+      "type": "user_message",
+      "value": "wireless",
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page"
+    },
+    "compliance.hasNCC": {
+      "type": "user_message",
+      "value": true,
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page"
+    },
+    "compliance.nccNumber": {
+      "type": "user_message",
+      "value": "CCAH24LPA380T2",
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page",
+      "earMapping": {
+        "left": "CCAH24LPA380T2",
+        "right": "CCAH24LPA390T5"
+      },
+      "formRepresentation": "實站 NCC 欄僅接受單碼，主欄放左耳；左右完整字號保留在 earMapping 與商品描述。"
+    },
+    "compliance.hasBSMI": {
+      "type": "user_message",
+      "value": true,
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page"
+    },
+    "compliance.bsmiNumber": {
+      "type": "user_message",
+      "value": "R3B170",
+      "corroboratingSource": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "verificationStatus": "user_provided_matched_taiwan_distributor_product_page"
+    },
+    "media.imagePaths": {
+      "type": "user_message",
+      "value": [
+        "demo-1.png"
+      ],
+      "scope": "使用者要求導入 demo-0.png 與 demo-1.png；demo-1 商品圖／demo-0 內部參考是 agent 依圖片內容作出的配置，不是使用者逐圖指定的角色。",
+      "roleDecisionSource": "agent_image_inspection"
+    },
+    "media.confirmedProductImages": {
+      "type": "user_message",
+      "value": true,
+      "scope": "使用者要求導入 demo-0.png 與 demo-1.png；demo-1 商品圖／demo-0 內部參考是 agent 依圖片內容作出的配置，不是使用者逐圖指定的角色。",
+      "roleDecisionSource": "agent_image_inspection"
+    },
+    "media.uploadAuthorized": {
+      "type": "user_message",
+      "value": true,
+      "scope": "使用者要求導入 demo-0.png 與 demo-1.png；demo-1 商品圖／demo-0 內部參考是 agent 依圖片內容作出的配置，不是使用者逐圖指定的角色。",
+      "roleDecisionSource": "agent_image_inspection"
+    }
+  },
+  "supersededAnswers": [
+    {
+      "path": "compliance.nccNumber",
+      "value": "CCAH24LP3330T0",
+      "sourceType": "user_message",
+      "status": "superseded_by_latest_user_exact_model",
+      "applyToStorefront": false
+    }
+  ],
+  "historyFile": "products/jlab-image-demo/superseded-research.json"
+}

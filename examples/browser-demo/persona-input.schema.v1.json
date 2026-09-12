@@ -1,0 +1,547 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:autopersona:browser-demo:persona-input:1.0.0",
+  "title": "AutoPersona browser demo Persona input v1",
+  "description": "Canonical nested handoff. null means unknown; research is internal only. Structural validity does not authorize upload or publication.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "exampleId",
+    "listing"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "exampleId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "listing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "product",
+        "persona",
+        "content",
+        "compliance",
+        "sales",
+        "shipping",
+        "media",
+        "research",
+        "automation"
+      ],
+      "properties": {
+        "product": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "categoryPath",
+            "brand",
+            "model",
+            "condition",
+            "gtin",
+            "noValidGtin"
+          ],
+          "properties": {
+            "title": {
+              "title": "商品名稱",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "categoryPath": {
+              "title": "商品分類路徑",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "brand": {
+              "title": "品牌（確認後填寫）",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "model": {
+              "title": "完整型號（確認後填寫）",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "condition": {
+              "title": "商品狀況",
+              "enum": [
+                null,
+                "new",
+                "used"
+              ]
+            },
+            "gtin": {
+              "title": "GTIN 商品條碼",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "noValidGtin": {
+              "title": "已確認沒有有效 GTIN",
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "noValidGtin": {
+                    "const": true
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "gtin": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "persona": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "audience",
+            "useCases",
+            "painPoints",
+            "positioning",
+            "competitors"
+          ],
+          "properties": {
+            "audience": {
+              "title": "目標客群",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "useCases": {
+              "title": "使用情境",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "painPoints": {
+              "title": "購買者需求",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "positioning": {
+              "title": "商品定位",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "competitors": {
+              "title": "比較對象",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "content": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "description",
+            "highlights",
+            "keywords"
+          ],
+          "properties": {
+            "description": {
+              "title": "商品描述",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "highlights": {
+              "title": "文案重點",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "keywords": {
+              "title": "搜尋關鍵字",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "compliance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hasBSMI",
+            "hasNCC",
+            "bsmiNumber",
+            "nccNumber",
+            "warrantyPeriod",
+            "warrantyType",
+            "packageContents",
+            "connectionType",
+            "headphoneType"
+          ],
+          "properties": {
+            "hasBSMI": {
+              "title": "是否具有 BSMI 認證",
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "hasNCC": {
+              "title": "是否具有 NCC 認證",
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "bsmiNumber": {
+              "title": "BSMI 認證字號",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "nccNumber": {
+              "title": "NCC 認證字號",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "warrantyPeriod": {
+              "title": "保固期限",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "warrantyType": {
+              "title": "保固方式",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "packageContents": {
+              "title": "實際包裝內容",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "connectionType": {
+              "title": "連線方式",
+              "enum": [
+                null,
+                "wired",
+                "wireless"
+              ]
+            },
+            "headphoneType": {
+              "title": "耳機類型（依實際頁面選項）",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "hasBSMI": {
+                    "const": false
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "bsmiNumber": {
+                    "type": "null"
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "hasNCC": {
+                    "const": false
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "nccNumber": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "sales": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "price",
+            "stock",
+            "minPurchaseQty"
+          ],
+          "properties": {
+            "price": {
+              "title": "售價（TWD）",
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "stock": {
+              "title": "庫存數量",
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "minPurchaseQty": {
+              "title": "最低購買數量",
+              "type": [
+                "integer",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "shipping": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "weightKg",
+            "packageSizeCm",
+            "dangerousGoods"
+          ],
+          "properties": {
+            "weightKg": {
+              "title": "包裹重量（kg）",
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "packageSizeCm": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "width",
+                "length",
+                "height"
+              ],
+              "properties": {
+                "width": {
+                  "title": "包裹寬度（cm）",
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "exclusiveMinimum": 0
+                },
+                "length": {
+                  "title": "包裹長度（cm）",
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "exclusiveMinimum": 0
+                },
+                "height": {
+                  "title": "包裹高度（cm）",
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "exclusiveMinimum": 0
+                }
+              }
+            },
+            "dangerousGoods": {
+              "title": "是否為危險物品",
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          }
+        },
+        "media": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "imagePaths",
+            "confirmedProductImages",
+            "uploadAuthorized",
+            "videoPath",
+            "referenceImagePaths",
+            "referenceOnly"
+          ],
+          "properties": {
+            "imagePaths": {
+              "title": "商品圖片路徑（每行一個）",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "confirmedProductImages": {
+              "title": "圖片已確認為本次販售商品",
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "uploadAuthorized": {
+              "title": "使用者已指定上傳這些圖片",
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "videoPath": {
+              "title": "商品影片路徑",
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "referenceImagePaths": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "referenceOnly": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          }
+        },
+        "research": {
+          "type": "object",
+          "required": [
+            "internalOnly"
+          ],
+          "properties": {
+            "internalOnly": {
+              "const": true
+            },
+            "matchedReviewCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "allMatchedReviewsVerifiedPurchase": {
+              "type": "boolean"
+            },
+            "buyerSegment": {
+              "type": "string"
+            },
+            "personaBrief": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true,
+          "description": "Internal research and source metadata only; never copied into customer fields or used as product evidence."
+        },
+        "automation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "allowPublish"
+          ],
+          "properties": {
+            "mode": {
+              "const": "draft_only"
+            },
+            "allowPublish": {
+              "const": false
+            }
+          }
+        },
+        "personaBrief": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional raw Persona data. Internal research remains in research after normalization."
+        }
+      }
+    }
+  }
+}

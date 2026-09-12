@@ -1,0 +1,39 @@
+{
+  "internalOnly": true,
+  "checkedOn": "2026-09-12",
+  "status": "user_provided_matched_taiwan_distributor_product_page",
+  "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+  "activeNumbers": {
+    "nccLeft": "CCAH24LPA380T2",
+    "nccRight": "CCAH24LPA390T5",
+    "nccFormValue": "CCAH24LPA380T2",
+    "bsmi": "R3B170"
+  },
+  "sources": [
+    {
+      "sourceType": "taiwan_distributor_product_page",
+      "url": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+      "modelInRelevantSection": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+      "nccLeft": "CCAH24LPA380T2",
+      "nccRight": "CCAH24LPA390T5",
+      "bsmiNumber": "R3B170"
+    }
+  ],
+  "independentGovernmentDatabaseMatchCompleted": false,
+  "blockers": [],
+  "resolution": "最新使用者明確型號與左右耳字號，均與該型號台灣代理商品規格段吻合，解除舊型號／證號不一致阻擋。",
+  "superseded": {
+    "nccNumber": "CCAH24LP3330T0",
+    "status": "superseded",
+    "applyToStorefront": false,
+    "historyFile": "products/jlab-image-demo/superseded-research.json"
+  },
+  "conclusion": "可依新答案更新既有商品；不聲稱已獨立查驗政府資料庫。",
+  "formConstraint": {
+    "sourceType": "browser_observed",
+    "acceptsSingleCertificateOnly": true,
+    "mainFieldEar": "left",
+    "mainFieldValue": "CCAH24LPA380T2",
+    "fullEarMappingLocation": "商品描述及 product-facts.json.certifications.ncc"
+  }
+}

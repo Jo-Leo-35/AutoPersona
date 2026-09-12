@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "exampleId": "jlab-open-sport-caregiver-2026-09-12",
+  "existingProductId": "43834400022",
+  "title": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機｜藍牙5.3 IP55",
+  "description": "給希望在日常聆聽之餘，仍留意家人與周遭動靜的父母與照護者，JLab JBuds OPEN SPORT 提供開放式聆聽選擇。\n\n商品特色\n・開放式運動藍牙耳機，對應在意周遭互動的日常聆聽需求\n・藍牙 5.3，搭載 14.2 mm 動圈單體\n・耳機具 IP55 防水防塵等級\n・單耳續航 9 小時以上，充電盒另供 17 小時，合計約 26 小時\n・Type-C 充電，充電時間約 2 小時\n\n商品規格\n型號：JLab JBuds OPEN SPORT 開放式運動藍牙耳機\n藍牙版本：5.3\n驅動單體：14.2 mm 動圈單體\n防水防塵：IP55（適用耳機）\n音頻解碼：SBC、AAC\n支援協議：HSP／HFP／A2DP／AVRCP\n麥克風：MEMS，-38 dB ±1 dB\n頻率響應：20 Hz–20 kHz\n重量：單耳 9.4 g；充電盒 36.8 g\n續航：單耳 9 小時以上；充電盒另供 17 小時；合計約 26 小時\n充電盒電池容量：500 mAh\n充電時間：約 2 小時\n充電接頭：Type-C\nNCC：左耳 CCAH24LPA380T2；右耳 CCAH24LPA390T5\nBSMI：R3B170\n\n商品內容物\n・JLab JBuds OPEN SPORT 開放式運動藍牙耳機\n・USB-C 充電線\n\n使用提醒\n環境聲感受會受播放音量與周遭噪音影響，使用時仍需留意照護情況；實際續航依使用條件而異。",
+  "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+  "compliance": {
+    "hasBSMI": true,
+    "hasNCC": true,
+    "bsmiNumber": "R3B170",
+    "nccNumber": "CCAH24LPA380T2",
+    "warrantyPeriod": null,
+    "warrantyType": null,
+    "packageContents": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機\nUSB-C 充電線",
+    "connectionType": "wireless",
+    "headphoneType": "開放式"
+  },
+  "specifications": {
+    "bluetoothVersion": "5.3",
+    "driver": {
+      "type": "dynamic",
+      "diameterMm": 14.2
+    },
+    "ipRating": {
+      "value": "IP55",
+      "appliesTo": "earbuds_only"
+    },
+    "audioCodecs": [
+      "SBC",
+      "AAC"
+    ],
+    "audioCodecSourceNote": "使用者原文 SBC, AAC (free)；free 不轉成售價、贈品或訂閱宣稱。",
+    "profiles": [
+      "HSP",
+      "HFP",
+      "A2DP",
+      "AVRCP"
+    ],
+    "microphone": {
+      "type": "MEMS",
+      "sensitivityDb": -38,
+      "toleranceDb": 1
+    },
+    "frequencyResponseHz": {
+      "min": 20,
+      "max": 20000
+    },
+    "weightG": {
+      "singleEarbud": 9.4,
+      "chargingCase": 36.8
+    },
+    "playtimeHours": {
+      "singleEarbud": "9+",
+      "chargingCaseAdditional": 17,
+      "total": 26
+    },
+    "chargingCaseBatteryMah": 500,
+    "chargeTimeHours": {
+      "value": 2,
+      "approximate": true
+    },
+    "chargeConnector": "Type-C",
+    "earphoneDesign": "open-ear"
+  },
+  "certificationEarMapping": {
+    "left": "CCAH24LPA380T2",
+    "right": "CCAH24LPA390T5"
+  },
+  "sales": {
+    "price": null,
+    "stock": null,
+    "minPurchaseQty": null
+  },
+  "retainExistingPageValues": {
+    "sales.price": {
+      "value": 3990,
+      "sourceFile": "products/jlab-image-demo/confirmed-facts.json",
+      "sourceType": "current_browser_observed",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false,
+      "reportedBy": "/root/browser_flow"
+    },
+    "sales.stock": {
+      "value": 1,
+      "sourceFile": "products/jlab-image-demo/confirmed-facts.json",
+      "sourceType": "current_browser_observed",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false,
+      "reportedBy": "/root/browser_flow"
+    },
+    "product.condition": {
+      "value": "new",
+      "pageLabel": "全新",
+      "sourceFile": "products/jlab-image-demo/observed-site-state.json",
+      "sourceType": "historical_browser_observation",
+      "action": "verify_current_page_and_retain_existing_value",
+      "applyToCanonicalListing": false,
+      "currentObservationConfirmed": false
+    }
+  },
+  "imageAction": "retain_existing_images",
+  "observedImageCount": 2,
+  "imagePaths": [],
+  "referenceImagePaths": [
+    "demo-0.png",
+    "demo-1.png"
+  ],
+  "pageAttributeSuggestions": [
+    {
+      "label": "品牌",
+      "value": "JLab",
+      "basis": "本輪使用者正式型號"
+    },
+    {
+      "label": "耳機類型",
+      "value": "開放式",
+      "basis": "本輪使用者指定開放式商品"
+    },
+    {
+      "label": "連接類型",
+      "value": "無線",
+      "basis": "本輪藍牙 5.3 規格"
+    }
+  ],
+  "nccFormConstraint": {
+    "value": "CCAH24LPA380T2",
+    "sourceFile": "products/jlab-image-demo/observed-site-state.json",
+    "sourceType": "historical_browser_observation",
+    "acceptsSingleCertificateOnly": true,
+    "action": "verify_current_page_constraint",
+    "fullEarMappingLocation": "product-facts.json.certifications.ncc",
+    "currentFieldValueConfirmed": true,
+    "reportedBy": "/root/browser_flow"
+  },
+  "leaveBlankUnlessPageRequires": [
+    "保固",
+    "GTIN",
+    "物流重量與尺寸",
+    "危險物品分類"
+  ],
+  "researchExcluded": true,
+  "blockers": [],
+  "allowPublish": false,
+  "processing": {
+    "mode": "local_normalization",
+    "apiCalled": false,
+    "configRead": false,
+    "browserOperated": false
+  }
+}

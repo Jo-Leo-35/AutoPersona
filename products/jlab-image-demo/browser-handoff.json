@@ -1,0 +1,127 @@
+{
+  "existingProductId": "43834400022",
+  "title": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機 黑色｜耳掛設計",
+  "description": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機，採不入耳設計與可調整耳掛。給希望在聆聽音樂或節目時，仍保留與家人及周遭互動的父母與照護者，多一種日常聆聽選擇。實際環境聲感受會隨播放音量與周遭噪音改變，使用時仍需留意照護情況。\n\n商品特色\n・開放式設計，不將耳塞深入耳道\n・可調整耳掛，依耳形調整佩戴\n・藍牙 5.3，搭載 14.2 mm 動圈單體\n・耳機具 IP55 防塵防水等級；充電盒不適用\n・單耳播放 9 小時以上，充電盒另供 17 小時，總計約 26 小時；續航依使用條件而異\n・Type-C 充電，約 2 小時充電時間\n\n商品規格\n型號：JLab JBuds OPEN SPORT\n音頻解碼：SBC、AAC\n支援協議：HSP／HFP／A2DP／AVRCP\n麥克風：MEMS，-38 dB ±1 dB\n頻率響應：20 Hz–20 kHz\n重量：單耳 9.4 g；充電盒 36.8 g\n充電盒電池容量：500 mAh\nNCC：左耳 CCAH24LPA380T2；右耳 CCAH24LPA390T5\nBSMI：R3B170",
+  "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+  "blockers": [],
+  "certificationStatus": "user_provided_matched_taiwan_distributor_product_page",
+  "certificationEarMapping": {
+    "left": "CCAH24LPA380T2",
+    "right": "CCAH24LPA390T5"
+  },
+  "nccFormConstraint": {
+    "sourceType": "browser_observed",
+    "acceptsSingleCertificateOnly": true,
+    "mainFieldEar": "left",
+    "mainFieldValue": "CCAH24LPA380T2",
+    "fullEarMappingLocation": "商品描述及 product-facts.json.certifications.ncc"
+  },
+  "imagePaths": [
+    "demo-1.png"
+  ],
+  "referenceImagePaths": [
+    "demo-0.png"
+  ],
+  "imageRoles": {
+    "demo-1.png": "user_confirmed_product_image",
+    "demo-0.png": "internal_multibrand_reference_do_not_upload"
+  },
+  "sales": {
+    "price": 3990.0,
+    "stock": 1,
+    "minPurchaseQty": null
+  },
+  "compliance": {
+    "hasBSMI": true,
+    "hasNCC": true,
+    "bsmiNumber": "R3B170",
+    "nccNumber": "CCAH24LPA380T2",
+    "warrantyPeriod": null,
+    "warrantyType": null,
+    "packageContents": null,
+    "connectionType": "wireless",
+    "headphoneType": "開放式"
+  },
+  "specifications": {
+    "bluetoothVersion": "5.3",
+    "driver": {
+      "type": "dynamic",
+      "diameterMm": 14.2
+    },
+    "ipRating": {
+      "value": "IP55",
+      "appliesTo": "earbuds_only"
+    },
+    "audioCodecs": [
+      "SBC",
+      "AAC"
+    ],
+    "audioCodecSourceNote": "官方原文 SBC, AAC (free)；free 不作本賣場贈品或價格主張。",
+    "profiles": [
+      "HSP",
+      "HFP",
+      "A2DP",
+      "AVRCP"
+    ],
+    "microphone": {
+      "type": "MEMS",
+      "sensitivityDb": -38,
+      "toleranceDb": 1
+    },
+    "frequencyResponseHz": {
+      "min": 20,
+      "max": 20000
+    },
+    "weightG": {
+      "singleEarbud": 9.4,
+      "chargingCase": 36.8
+    },
+    "playtimeHours": {
+      "singleEarbud": "9+",
+      "chargingCaseAdditional": 17,
+      "total": 26,
+      "qualifier": "依音量、連線與使用條件而異"
+    },
+    "chargingCaseBatteryMah": 500,
+    "chargeTimeHours": {
+      "value": 2,
+      "approximate": true
+    },
+    "chargeConnector": "Type-C",
+    "earphoneDesign": "open-ear",
+    "earhook": "adjustable",
+    "color": "black"
+  },
+  "allowPublish": false,
+  "pageAttributeSuggestions": [
+    {
+      "label": "品牌",
+      "value": "JLab",
+      "basis": "使用者正式型號與代理來源"
+    },
+    {
+      "label": "耳機類型",
+      "value": "開放式",
+      "basis": "實站透過新增選項建立並選取「開放式」，依最新瀏覽器觀測保留此精確選項。"
+    },
+    {
+      "label": "連接類型",
+      "value": "無線",
+      "basis": "藍牙 5.3 規格"
+    }
+  ],
+  "retainExistingPageValues": {
+    "product.condition": {
+      "value": "new",
+      "pageLabel": "全新",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false
+    }
+  },
+  "leaveBlank": [
+    "完整包裝清單",
+    "保固",
+    "物流重量與尺寸"
+  ],
+  "source": "https://store.igogosport.com/products/jlab-jbuds-open-sport"
+}

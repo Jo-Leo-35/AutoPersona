@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoPersona — 商品上架工作室</title>
+  <style>
+    :root{--paper:#f5f4ed;--white:#fffefa;--ink:#233c35;--muted:#778079;--line:#dfe3d8;--teal:#236752;--teal-soft:#e5eee5;--orange:#dd6d3f;--orange-soft:#fbede1;--error:#a23932;--radius:17px}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.65}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}a{color:var(--teal)}[hidden]{display:none!important}.shell{max-width:1480px;margin:auto;padding:0 42px 40px}header{height:84px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;gap:11px;align-items:center;font-size:21px;font-weight:750;letter-spacing:-.8px}.brand-mark{width:35px;height:35px;background:var(--teal);border-radius:11px;color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-style:italic;font-size:28px}.brand span:last-child{color:var(--orange)}.nav-meta{display:flex;align-items:center;gap:12px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--teal)}.badge{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:20px;padding:4px 10px;font-size:11px;font-weight:650;background:#fffefa;white-space:nowrap}.dot{width:6px;height:6px;background:var(--teal);border-radius:100%;display:inline-block}.badge.orange{background:var(--orange-soft);border-color:#efd6c3;color:#a65a31}.badge.green{background:var(--teal-soft);border-color:#cdddcf;color:var(--teal)}.hero{padding:31px 0 24px;display:flex;justify-content:space-between;align-items:end;gap:20px}.hero h1{font-size:32px;line-height:1.3;letter-spacing:-1.2px;margin:7px 0 10px;font-weight:720}.hero h1 em{font-family:Georgia,serif;color:var(--teal);font-style:italic}.hero p{margin:0;color:var(--muted);font-size:13px}.hero-note{max-width:210px;font-size:12px;color:var(--muted);text-align:right}.steps{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:var(--white);border-radius:var(--radius);margin-bottom:24px;overflow:hidden}.step{display:flex;align-items:center;gap:10px;padding:17px 20px;border-right:1px solid var(--line);position:relative;color:#91978e}.step:last-child{border-right:0}.step-number{border:1px solid #dbe0d6;display:grid;place-items:center;flex-shrink:0;width:28px;height:28px;border-radius:100%;font-size:11px}.step strong{font-size:12px;font-weight:650;display:block}.step small{font-size:9px;letter-spacing:.8px;display:block}.step.active{background:var(--teal-soft);color:var(--teal)}.step.active .step-number{color:white;background:var(--teal);border-color:var(--teal)}.step.done{color:var(--teal)}.step.done .step-number{background:#eef3e9;border-color:#cbdbc9}.workspace{display:grid;grid-template-columns:minmax(330px,.85fr) minmax(480px,1.45fr);gap:22px;align-items:start}.column{display:grid;gap:20px;min-width:0}.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.card-pad{padding:22px}.card-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:17px}.card-top h2{font-size:16px;letter-spacing:-.4px;margin:0}.section-number{font-size:11px;color:var(--orange);margin-right:7px;letter-spacing:1px}.quiet{color:var(--muted);font-size:12px}.text-button{border:0;background:transparent;color:var(--teal);font-size:11px;padding:4px 0;text-decoration:underline;text-underline-offset:4px}.field-label{display:block;font-size:11px;font-weight:700;margin:13px 0 7px;color:#52665b}.input,textarea,select{width:100%;border:1px solid #dce1d6;border-radius:9px;background:#fffefa;color:var(--ink);outline:none;padding:10px 12px;transition:border .15s,box-shadow .15s}.input:focus,textarea:focus,select:focus{border-color:#679a7e;box-shadow:0 0 0 3px #23675212}textarea{resize:vertical;line-height:1.65}.brief{min-height:72px;font-size:12px}.editor{min-height:198px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:#486358;background:#f7f8f2;tab-size:2;line-height:1.6}.editor-head{display:flex;align-items:center;justify-content:space-between;margin-top:13px}.editor-head .field-label{margin:0 0 7px}.micro{font-size:10px;color:var(--muted)}.settings{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}.check-label{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:12px}.check-label input{accent-color:var(--teal);width:15px;height:15px;margin:0}.segmented{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#eff1e8;border:1px solid var(--line);padding:4px;border-radius:10px;margin:13px 0}.segmented label{font-size:11px;text-align:center;padding:7px;border-radius:6px;cursor:pointer;color:var(--muted)}.segmented label:has(input:checked){background:var(--white);box-shadow:0 1px 5px #233c3510;color:var(--ink);font-weight:700}.segmented input{position:absolute;opacity:0;pointer-events:none}.actions{display:flex;gap:8px;margin-top:14px}.button{border:1px solid var(--teal);border-radius:9px;background:var(--teal);color:#fff;padding:11px 16px;font-size:12px;font-weight:650;transition:background .15s}.button:not(:disabled):hover{background:#184e3d}.button.secondary{background:transparent;color:var(--teal);border-color:#cbd7c8}.button.secondary:not(:disabled):hover{background:var(--teal-soft)}.button.orange{background:var(--orange);border-color:var(--orange)}.button.orange:not(:disabled):hover{background:#c45b30}.button.fill{flex:1}.button.small{padding:7px 11px;font-size:11px}.helper{font-size:11px;color:var(--muted);margin:9px 0 0;line-height:1.65}.error-banner{border:1px solid #e8bdb5;background:#fff0eb;color:var(--error);padding:12px 16px;border-radius:10px;font-size:12px;margin:0 0 18px;white-space:pre-wrap;overflow-wrap:anywhere}.question-card{border-color:#e6c4a6}.question-card .card-top{margin-bottom:5px}.question-card .eyebrow{color:var(--orange)}.question-count{background:var(--orange-soft);color:#a5572c;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;font-size:12px;font-weight:700}.question-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.question-field.full{grid-column:1/-1}.question-field .field-label{margin-top:14px}.question-field .reason{font-size:10px;color:var(--muted);margin:4px 0 0}.required{color:var(--orange);margin-left:2px}.question-field input,.question-field select{padding:8px 10px;font-size:12px}.preview-top{padding:19px 23px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px}.preview-top h2{font-size:15px;margin:0}.preview-body{display:grid;grid-template-columns:180px 1fr;gap:22px;padding:23px}.product-visual{background:#f0eee7;border-radius:11px;position:relative;min-height:220px;overflow:hidden;display:flex;align-items:center;justify-content:center}.product-visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.image-caption{position:absolute;bottom:9px;left:8px;right:8px;background:#fffefaeb;backdrop-filter:blur(4px);border-radius:5px;padding:4px 5px;font-size:9px;text-align:center;color:#796d5f}.product-content{min-width:0}.product-content h3{font-size:20px;line-height:1.5;margin:7px 0 10px;letter-spacing:-.4px}.preview-placeholder{color:#899387}.description{white-space:pre-wrap;font-size:12px;line-height:1.9;color:#657167;max-height:155px;overflow:auto;margin:0}.listing-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.chip{display:inline-flex;border:1px solid var(--line);background:#f8f8f1;padding:3px 8px;border-radius:5px;font-size:10px;color:#657767}.research{margin:0 23px 22px;padding:13px 15px;background:#f1f4ec;border:1px solid #e3e8da;border-radius:9px}.research summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:650;list-style:none}.research summary::after{content:'＋';color:#7f917c}.research[open] summary::after{content:'−'}.research p{font-size:11px;color:#697866;margin:10px 0 0;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}.research small{font-weight:400;font-size:10px;color:#7d8a76;margin-left:6px}.browser-header{display:flex;align-items:center;justify-content:space-between;padding:16px 21px;border-bottom:1px solid var(--line);gap:12px}.browser-header h2{font-size:14px;margin:0}.browser-header h2 span{margin-right:8px;color:#658369}.browser-toolbar{display:flex;align-items:center;gap:10px;padding:9px 15px;background:#eff1e9;border-bottom:1px solid var(--line)}.traffic{display:flex;gap:4px}.traffic i{height:6px;width:6px;display:block;background:#c8cebf;border-radius:50%}.address{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:ui-monospace,monospace;font-size:9px;color:#7c8774}.live-label{font-size:9px;color:var(--teal);display:flex;align-items:center;gap:5px;white-space:nowrap}.browser-canvas{background:#e8ece1;min-height:255px;max-height:430px;position:relative;overflow:auto}.browser-canvas img{width:100%;display:block}.browser-empty{min-height:255px;padding:32px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#788773}.browser-icon{height:50px;width:66px;border:1.5px solid #a9b7a0;border-radius:8px;margin-bottom:17px;position:relative;background:#f5f6ee}.browser-icon::before{position:absolute;content:'';left:0;right:0;top:10px;border-top:1px solid #b6c1ad}.browser-icon::after{position:absolute;content:'↗';font-size:26px;left:23px;top:7px;color:#7c9376}.browser-empty strong{font-size:13px;font-weight:600;color:#566c50}.browser-empty p{font-size:11px;max-width:295px;margin:6px 0 0}.status-bar{padding:13px 19px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);font-size:11px}.status-main{display:flex;align-items:center;gap:8px;min-width:0}.status-main .dot.busy{animation:pulse 1.4s infinite}.status-main span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.events{padding:0 22px 17px}.events summary{font-size:11px;color:var(--muted);cursor:pointer}.event-list{max-height:165px;overflow:auto;padding-top:8px}.event-row{display:grid;grid-template-columns:62px 1fr;gap:7px;font-size:10px;padding:5px 0;border-bottom:1px solid #edf0e6;color:#62745e}.event-row time{color:#95a18d;font-family:ui-monospace,monospace}.event-row.error{color:var(--error)}.review-card{background:#edf4e9;border-color:#c9dbc0}.review-card h2{font-size:18px;margin:4px 0 8px}.review-title{background:#fffefa;border:1px solid #d5dfce;padding:11px 12px;border-radius:8px;font-size:12px;margin:13px 0;overflow-wrap:anywhere}.review-card .input{font-size:12px}.success-card{background:var(--teal);color:#fff;padding:26px}.success-card h2{margin:7px 0;font-size:23px}.success-card .eyebrow{color:#c0d4b9}.success-card p{color:#d5e2ce;font-size:12px;margin:0}.warning-list{background:var(--orange-soft);border-top:1px solid #efdfce;padding:12px 23px;font-size:11px;color:#906844}.warning-list p{margin:3px 0}.footer{margin-top:25px;display:flex;justify-content:space-between;color:#8e9888;font-size:10px;letter-spacing:.2px}.spinner{display:inline-block;width:11px;height:11px;border:1.5px solid currentColor;border-right-color:transparent;border-radius:100%;animation:spin .7s linear infinite}.preview-thumbs{display:flex;gap:5px;margin-top:7px}.preview-thumbs button{width:35px;height:30px;border:1px solid #dadfce;padding:0;overflow:hidden;background:white;border-radius:5px}.preview-thumbs img{width:100%;height:100%;object-fit:cover}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.3}}@media(min-width:1450px){.shell{padding-left:60px;padding-right:60px}.hero{padding-top:35px;padding-bottom:28px}}@media(max-width:1050px){.shell{padding:0 24px 30px}.workspace{grid-template-columns:minmax(300px,.9fr) minmax(390px,1.1fr);gap:16px}.preview-body{grid-template-columns:125px 1fr;gap:16px;padding:18px}.product-visual{min-height:215px}.product-content h3{font-size:17px}.step{padding:14px 12px}.step small{display:none}.hero-note{display:none}.card-pad{padding:18px}.research{margin-left:18px;margin-right:18px}}@media(max-width:760px){.shell{padding:0 16px 25px}header{height:68px}.brand{font-size:19px}.nav-meta .micro{display:none}.hero{padding:24px 0 20px}.hero h1{font-size:27px}.hero p{font-size:12px;max-width:330px}.workspace{grid-template-columns:1fr}.steps{margin-bottom:16px}.step{display:flex;flex-direction:column;gap:5px;padding:11px 2px}.step strong{font-size:10px}.step-number{width:23px;height:23px;font-size:10px}.preview-body{grid-template-columns:125px 1fr}.product-visual{min-height:220px}.footer{gap:12px;flex-wrap:wrap}.preview-top{padding:16px 18px}.preview-top .badge{font-size:9px}.question-grid{gap:0 10px}.browser-canvas{min-height:210px}.nav-meta{gap:6px}.hero .eyebrow{font-size:9px}}
+    .data-details{margin:0 23px 22px;border-top:1px solid var(--line);padding-top:13px}.data-details summary{cursor:pointer;font-size:12px;font-weight:650}.data-actions{display:flex;gap:18px;margin:10px 0;font-size:11px}.table-scroll{overflow:auto;max-height:300px}.key-values{border-collapse:collapse;width:100%;font-size:10px;table-layout:fixed}.key-values th,.key-values td{padding:7px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere;white-space:pre-wrap}.key-values th{position:sticky;top:0;background:var(--white);color:var(--muted);font-weight:500}.key-values td:first-child{font-family:ui-monospace,monospace;color:var(--teal);width:45%}.key-values .unknown{color:var(--orange)}.result-link{color:#fff;display:inline-block;margin-top:12px;font-size:12px}.input:disabled,textarea:disabled{opacity:.7}.preview-thumbs button.selected{border:2px solid var(--teal)}.address[href]{text-decoration:underline;text-underline-offset:3px}.browser-header .button:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #d99464;outline-offset:3px}@media(max-width:760px){.data-details{margin-left:18px;margin-right:18px}.data-actions{flex-wrap:wrap;gap:7px 15px}.browser-toolbar{flex-wrap:wrap}.address{min-width:140px}.live-label{margin-left:auto}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div class="brand"><div class="brand-mark">a</div><div>Auto<span>Persona</span></div></div>
+    <div class="nav-meta"><span class="micro">商品上架工作室</span><span class="badge orange" id="modeBadge">真實蝦皮賣家中心</span><span class="badge" id="providerBadge"><i class="dot"></i>離線轉換</span></div>
+  </header>
+  <section class="hero">
+    <div><div class="eyebrow">From persona to your Shopee store</div><h1>讓商品，遇見<em>對的人。</em></h1><p>匯入隊友的 Persona，整理商品資料，讓瀏覽器接手上架流程。</p></div>
+    <div class="hero-note">你提供事實與判斷<br>AutoPersona 處理文案與操作</div>
+  </section>
+  <nav class="steps" aria-label="上架進度">
+    <div class="step active" data-stage="0"><span class="step-number">01</span><div><strong>輸入商品洞察</strong><small>BRIEF & PERSONA</small></div></div>
+    <div class="step" data-stage="1"><span class="step-number">02</span><div><strong>產生上架草稿</strong><small>CREATE DRAFT</small></div></div>
+    <div class="step" data-stage="2"><span class="step-number">03</span><div><strong>開啟賣家頁面</strong><small>BROWSER IN ACTION</small></div></div>
+    <div class="step" data-stage="3"><span class="step-number">04</span><div><strong>補充缺少資訊</strong><small>HUMAN IN THE LOOP</small></div></div>
+    <div class="step" data-stage="4"><span class="step-number">05</span><div><strong>確認並發布</strong><small>REVIEW & PUBLISH</small></div></div>
+  </nav>
+  <div class="error-banner" id="errorBanner" role="alert" hidden></div>
+  <main class="workspace">
+    <div class="column">
+      <section class="card question-card card-pad" id="browserActionCard" hidden><div class="eyebrow">Continue in your browser</div><h2 id="browserActionHeading" style="font-size:18px;margin:5px 0 8px">這一步需要你在賣家頁面操作。</h2><p class="helper" id="browserActionHelp">請完成登入、驗證或頁面要求的操作，再回來繼續。</p><div class="actions"><button type="button" class="button secondary fill" id="loginFocusButton">切換至賣家頁 ↗</button><button type="button" class="button fill" id="loginResumeButton">已完成，繼續</button></div></section>
+      <section class="card question-card card-pad" id="questionsCard" hidden>
+        <div class="eyebrow">Your input makes it accurate</div>
+        <div class="card-top"><h2 id="questionsHeading">有幾個資訊需要你確認</h2><span class="question-count" id="questionCount">0</span></div>
+        <p class="helper" id="questionsHelp">未知的資訊交給你確認，填好的內容會保留在賣家頁面。</p>
+        <div id="demoValuesWrap" hidden><button type="button" class="text-button" id="demoValuesButton" data-testid="demo-values">帶入示範值 ↗</button><span class="micro"> 僅供本機示範，非商品實際規格</span></div>
+        <form id="answersForm"><div class="question-grid" id="questionsFields"></div><details id="optionalQuestions" style="margin-top:14px" hidden><summary class="quiet" style="cursor:pointer">其他可補充資訊（非必填）</summary><div class="question-grid" id="optionalFields"></div></details><div id="manualQuestions"></div><div class="actions"><button class="button fill" id="answerButton" data-testid="submit-answers" type="submit">儲存已知答案並繼續</button><button class="button secondary fill" id="manualResumeButton" type="button" hidden>我已處理，繼續操作</button></div></form>
+      </section>
+      <section class="card review-card card-pad" id="reviewCard" hidden>
+        <div class="eyebrow">One final look</div><h2>都填好了，請你做最後確認。</h2><p class="helper" id="reviewHelp">查看賣家頁面的預覽，核對圖片、價格、庫存與運送資訊。</p>
+        <div class="review-title" id="reviewTitle"></div>
+        <label class="field-label" for="confirmation">輸入完整商品標題以確認發布</label><input class="input" id="confirmation" data-testid="publish-confirm" autocomplete="off" placeholder="貼上上方完整標題">
+        <div class="actions"><button class="button orange fill" id="publishButton" data-testid="publish" disabled>確認發布至本機示範頁</button></div>
+      </section>
+      <section class="card success-card" id="successCard" hidden><div class="eyebrow">Verified page result</div><h2 id="successHeading">示範商品已發布。</h2><p id="successText">賣家頁面已回報發布成功。本次操作只發生在本機示範環境。</p><p id="completionEvidence" style="margin-top:12px"></p><a id="resultLink" class="result-link" target="_blank" rel="noopener noreferrer" hidden>查看已驗證的結果頁 ↗</a></section>
+      <section class="card card-pad" id="inputCard">
+        <div class="card-top"><h2><span class="section-number">01 /</span> 商品與受眾</h2><button type="button" class="text-button" id="exampleButton">載入示範資料 ↗</button></div>
+        <label for="brief" class="field-label">補充這次的溝通方向（選填）</label><textarea id="brief" class="brief" placeholder="例如：向需要保持環境感知的父母／照護者介紹這款耳機。"></textarea>
+        <div class="editor-head"><label for="jsonInput" class="field-label">隊友的 Persona / 商品資料</label><button type="button" id="importButton" class="text-button">匯入 JSON / TXT ↗</button></div><input id="importFile" type="file" accept=".json,.txt,application/json,text/plain" hidden><textarea id="jsonInput" class="editor" spellcheck="false" aria-label="商品與 Persona JSON 或文字" placeholder="貼上 JSON 或 Persona 文字，例如：開放式耳機 | 需要保持環境感知的父母／照護者"></textarea><p class="helper" id="importStatus" role="status">支援 JSON 或純文字；圖片使用 JSON 中的本機路徑。</p>
+        <div class="settings"><label class="check-label"><input id="useAi" type="checkbox"><span>使用 .env API 產生文案</span><span class="micro" id="apiStatus">檢查設定中</span></label><p class="helper" id="providerHelp">離線轉換使用固定規則；勾選後會呼叫已設定的 AI 服務。</p></div>
+        <div class="settings" role="radiogroup" aria-label="操作環境"><label class="check-label"><input type="radio" name="mode" value="shopee" checked><span>真實蝦皮賣家中心</span><span class="badge orange">實際操作</span></label><p class="helper">seller.shopee.tw · 使用你在瀏覽器登入的賣家帳號</p><label class="check-label" style="margin-top:10px"><input type="radio" name="mode" value="demo"><span>本機測試頁</span><span class="micro">僅驗證流程，無真實商品</span></label></div>
+        <div class="actions"><button type="button" class="button fill" id="prepareButton" data-testid="prepare">產生上架草稿 <span aria-hidden="true">↗</span></button><button type="button" class="button secondary fill" id="startButton" data-testid="start" disabled>開啟瀏覽器</button></div>
+        <p class="helper" id="inputHelp">先整理文案，再開啟真實蝦皮頁面；需要登入時會等你完成。</p>
+      </section>
+    </div>
+    <div class="column">
+      <section class="card" id="draftCard">
+        <div class="preview-top"><h2><span class="section-number">02 /</span> 商品草稿預覽</h2><span class="badge green" id="draftBadge">等待你的商品資料</span></div>
+        <div class="preview-body">
+          <div><div class="product-visual"><img id="productImage" src="/media/demo-1.png" alt="示範視覺素材，非經確認的實際商品照"><span class="image-caption" id="imageCaption">示範視覺・非實際商品規格依據</span></div><div class="preview-thumbs" id="previewThumbs"></div></div>
+          <div class="product-content"><div class="eyebrow" id="productCategory">Your next product story</div><h3 id="productTitle" class="preview-placeholder">從一份洞察，開始一則好介紹。</h3><p class="description" id="productDescription">貼上商品資料與 Persona，AutoPersona 會整理出適合目標受眾的商品標題與介紹。價格、庫存等事實資料，會保留給你確認。</p><div class="listing-meta" id="listingMeta"><span class="chip">受眾導向文案</span><span class="chip">未知資訊主動詢問</span></div></div>
+        </div>
+        <details class="research" id="researchDetails"><summary><span>受眾洞察與研究依據 <small>內部使用，不放入買家文案</small></span></summary><p id="researchText">產生草稿後，這裡會呈現 Persona 與研究內容，方便你檢查文案的方向。</p></details>
+        <details class="data-details" id="listingDetails" hidden><summary>查看上架欄位 key-value <span class="micro" id="fieldCount"></span></summary><p class="helper">未知值保留為 null；補答後這份資料與商品草稿會同步更新。</p><div class="data-actions"><a href="/api/listing" download="autopersona-listing.json">下載 listing.json ↓</a><a href="/api/report" download="autopersona-report.json">下載操作報告 ↓</a></div><div class="table-scroll"><table class="key-values"><thead><tr><th scope="col">欄位</th><th scope="col">目前值</th></tr></thead><tbody id="listingFields"></tbody></table></div></details>
+        <div class="warning-list" id="warnings" hidden></div>
+      </section>
+      <section class="card" id="browserCard">
+        <div class="browser-header"><h2><span aria-hidden="true">▣</span>瀏覽器工作現場</h2><button class="button secondary small" id="focusButton" disabled>切換至賣家頁 ↗</button></div>
+        <div class="browser-toolbar"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><a class="address" id="browserAddress" target="_blank" rel="noopener noreferrer">等待開啟賣家頁面</a><span class="live-label" id="screenshotLabel">瀏覽器實際畫面</span></div>
+        <div class="browser-canvas"><img id="browserScreenshot" alt="自動化瀏覽器的最新實際截圖" hidden><div class="browser-empty" id="browserEmpty"><div class="browser-icon" aria-hidden="true"></div><strong id="browserEmptyTitle">真實蝦皮操作，看得見。</strong><p id="browserEmptyText">產生草稿後，點擊「開啟瀏覽器」。這裡會顯示真實賣家頁面的最新截圖；需要登入時由你接手。</p></div></div>
+        <div class="status-bar" role="status" aria-live="polite"><div class="status-main"><i class="dot" id="statusDot"></i><span id="statusText">準備就緒，等待輸入</span></div><button class="text-button" id="resumeButton" hidden>我已處理，繼續操作 ↗</button><span class="micro" id="statusMode">SHOPEE</span></div>
+        <details class="events" id="eventDetails"><summary>查看操作紀錄 <span id="eventCount">(0)</span></summary><div class="event-list" id="eventList"><p class="micro">每一次操作，會在這裡留下紀錄。</p></div></details>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><span>AutoPersona / 讓洞察走到上架的最後一哩</span><span>事實由你確認 · 發布由你決定</span></footer>
+</div>
+<script>
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const phaseLabels = {idle:'準備就緒，等待輸入',preparing:'正在整理商品與受眾洞察…',prepared:'草稿已就緒，可以開啟瀏覽器',starting:'正在開啟可見的瀏覽器…',filling:'正在賣家頁面填寫商品資料…',awaiting_info:'已保留目前進度，等待你補充資訊',awaiting_browser:'請在瀏覽器完成登入或必要操作',ready:'填寫完成，等待你確認發布',publishing:'正在提交發布，等待賣家頁面確認…',published:'賣家頁面已回報發布成功',error:'操作暫停，請查看錯誤訊息'};
+  const stageByPhase = {idle:0,preparing:1,prepared:1,starting:2,filling:2,awaiting_info:3,awaiting_browser:2,ready:4,publishing:4,published:5,error:2};
+  let state = {phase:'idle',busy:false,questions:[],events:[],config:{}}, requestBusy = false, polling = false, questionSignature = '', listingSignature = '', eventSignature = '', lastScreenshotAt = 0, lastScreenshotEvent = '', localError = '', connectionError = '', initialized = false, inputChanged = false, importBusy = false;
+  const answerDraft = new Map();
+  const activePhases = new Set(['starting','filling','awaiting_info','awaiting_browser','ready','publishing']);
+  function safeText(value) { return value == null ? '' : typeof value === 'string' ? value : typeof value === 'object' ? JSON.stringify(value,null,2) : String(value); }
+  function listText(value) { return Array.isArray(value) ? value.map(safeText).join('、') : safeText(value); }
+  function setError(message) { localError = message || ''; renderError(); }
+  function renderError() { const message=localError || connectionError || state.error; $('errorBanner').hidden=!message; $('errorBanner').textContent=typeof message==='object' ? safeText(message?.message || message) : message || ''; }
+  async function api(path,body) { const response=await fetch(path,{method:body===undefined?'GET':'POST',headers:{'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})}); const contentType=response.headers.get('content-type') || ''; const data=contentType.includes('json')?await response.json():{error:await response.text()}; if(!response.ok) throw new Error(safeText(data.error?.message || data.error || data.message || `操作失敗 (${response.status})`)); return data; }
+  async function action(path,body) { if(requestBusy || state.busy) return; requestBusy=true; setError(''); renderControls(); try { const result=await api(path,body); if(result.phase) applyState(result); await poll(); } catch(error) { setError(error.message); } finally { requestBusy=false; renderControls(); } }
+  function selectedMode() { return document.querySelector('input[name="mode"]:checked').value; }
+  function activeMode() { return state.browser?.url || activePhases.has(state.phase) ? state.mode || selectedMode() : selectedMode(); }
+  function safeUrl(value) { if(!value)return '';try { const url=new URL(value,location.origin);return ['http:','https:'].includes(url.protocol)?url.href:''; } catch { return ''; } }
+  function setLink(element,value) { const url=safeUrl(value);if(url)element.href=url;else element.removeAttribute('href');return url; }
+  function providerMode() { return typeof state.provider==='object' ? state.provider?.mode : state.provider; }
+  function renderControls() {
+    const busy=!!state.busy || requestBusy || importBusy, phase=state.phase || 'idle';
+    $('prepareButton').disabled=busy || activePhases.has(phase);
+    $('prepareButton').textContent=phase==='preparing' ? '正在產生草稿…' : '產生上架草稿 ↗';
+    $('startButton').disabled=busy || phase!=='prepared';
+    $('exampleButton').disabled=busy || activePhases.has(phase);
+    $('importButton').disabled=busy || activePhases.has(phase);
+    $('importFile').disabled=busy || activePhases.has(phase);
+    const editableQuestions=(state.questions||[]).filter(question=>question.type!=='manual');
+    $('answerButton').disabled=busy || !editableQuestions.length || ![...answerDraft.values()].some(value=>value!=='');
+    $('answerButton').hidden=!editableQuestions.length;
+    $('manualResumeButton').disabled=busy;
+    $('loginResumeButton').disabled=busy;$('loginFocusButton').disabled=busy || !state.browser?.url;
+    $('demoValuesButton').disabled=busy;
+    $('answerButton').textContent=phase==='prepared'?'儲存已知答案':'儲存已知答案並繼續';
+    $('focusButton').disabled=busy || !state.browser?.url;
+    $('resumeButton').hidden=!state.browser?.url || !['awaiting_browser','awaiting_info','error','ready'].includes(phase); $('resumeButton').disabled=busy;
+    $('resumeButton').textContent=phase==='error'?'重新查看頁面並繼續 ↗':'重新查看頁面 ↗';
+    $('publishButton').disabled=busy || phase!=='ready' || $('confirmation').value !== (state.listing?.product?.title || '');
+    const configured=!!(state.config?.api_configured ?? state.config?.configured);
+    $('useAi').disabled=busy || activePhases.has(phase) || !configured;
+    $('apiStatus').textContent=configured ? `已設定 ${state.config?.model || state.provider?.model || 'API'}` : '尚未設定金鑰';
+    if(!configured) $('useAi').checked=false;
+    $('jsonInput').disabled=busy || activePhases.has(phase); $('brief').disabled=busy || activePhases.has(phase);
+    $('answersForm').querySelectorAll('input,select,textarea').forEach(input=>input.disabled=busy);
+    document.querySelectorAll('input[name="mode"]').forEach(input=>input.disabled=busy || activePhases.has(phase));
+    $('statusDot').classList.toggle('busy',busy);
+  }
+  function createQuestion(question) {
+    const wrapper=document.createElement('div'); wrapper.className='question-field';
+    const label=document.createElement('label');label.className='field-label';label.htmlFor=`q-${question.path}`;label.textContent=question.label || question.path;
+    if(question.required){const required=document.createElement('span');required.className='required';required.textContent=' *';label.append(required);}
+    let control; const options=question.options;
+    if(Array.isArray(options)&&options.length){control=document.createElement('select'); const prompt=document.createElement('option');prompt.value='';prompt.textContent='請選擇';control.append(prompt);for(const value of options){const option=document.createElement('option');option.value=typeof value==='object'?value.value:value;option.textContent=typeof value==='object'?(value.label || value.value):({new:'全新',used:'二手',true:'是',false:'否',wired:'有線',wireless:'無線'}[value] || value);control.append(option);}}
+    else if(question.type==='boolean'){control=document.createElement('select');for(const [value,text] of [['','請選擇'],['false','否'],['true','是']]){const option=document.createElement('option');option.value=value;option.textContent=text;control.append(option);}}
+    else {control=document.createElement(question.type==='array'?'textarea':'input');if(question.type==='array'){control.rows=2;control.placeholder=question.path==='product.categoryPath'?'每行一層，或用 > 分隔分類':'每行一項；圖片填寫本機檔案路徑';}else{control.type=['number','integer'].includes(question.type)?'number':'text';if(control.type==='number'){control.step=question.type==='integer'?'1':'any';control.min=question.path==='sales.stock'?'0':question.type==='integer'?'1':'0.000000000001';}control.placeholder='請填入已確認的資訊';}}
+    control.classList.add('input');control.id=`q-${question.path}`;control.name=question.path;control.dataset.type=question.type || 'string';control.value=answerDraft.has(question.path)?answerDraft.get(question.path):'';
+    // Required marks describe what completion needs; partial answer batches are allowed.
+    control.addEventListener('input',()=>{answerDraft.set(question.path,control.value);renderControls();});control.addEventListener('change',()=>{answerDraft.set(question.path,control.value);renderControls();});
+    if((question.label || '').length>15 || (question.reason || '').length>65 || question.type==='array')wrapper.classList.add('full');
+    wrapper.append(label,control);if(question.reason){const reason=document.createElement('p');reason.className='reason';reason.textContent=question.reason;wrapper.append(reason);} return wrapper;
+  }
+  function renderQuestions() {
+    const questions=state.questions || [], paths=new Set(questions.map(q=>q.path));for(const path of answerDraft.keys())if(!paths.has(path))answerDraft.delete(path);
+    const required=questions.filter(q=>q.required && q.type!=='manual'), optional=questions.filter(q=>!q.required && q.type!=='manual'), manual=questions.filter(q=>q.type==='manual');
+    $('questionsCard').hidden=!questions.length || ['ready','publishing','published'].includes(state.phase);$('questionCount').textContent=required.length + manual.length;
+    $('questionsHeading').textContent=required.length || manual.length?'有幾個資訊需要你確認':'還有一些可補充的資訊';
+    $('demoValuesWrap').hidden=activeMode()!=='demo' || !required.length;
+    $('optionalQuestions').hidden=!optional.length;$('manualResumeButton').hidden=!manual.length;
+    $('questionsHelp').textContent=(state.phase==='prepared'?'可直接開啟瀏覽器，先填入已知內容。':state.phase==='awaiting_browser'?'完成登入後可從原頁面繼續。':'瀏覽器已保留進度，補答後會重新檢查目前頁面。')+' 先回答你確定的項目即可；* 項目需要在完成上架前補齊。';
+    const signature=JSON.stringify(questions);if(signature!==questionSignature){questionSignature=signature;$('questionsFields').replaceChildren(...required.map(createQuestion));$('optionalFields').replaceChildren(...optional.map(createQuestion));$('manualQuestions').replaceChildren(...manual.map(question=>{const p=document.createElement('p');p.className='helper';p.textContent=`${question.label || '瀏覽器需要你的操作'}：${question.reason || ''}`;return p;}));}
+  }
+  function renderListing() {
+    const listing=state.listing, signature=JSON.stringify(listing);if(signature===listingSignature)return;listingSignature=signature;
+    if(!listing?.product){$('listingDetails').hidden=true;$('productTitle').textContent=state.phase==='preparing'?'正在整理這一份商品資料…':'從一份洞察，開始一則好介紹。';$('productTitle').classList.add('preview-placeholder');$('productDescription').textContent='商品草稿會在這裡呈現，未知資訊會另外詢問。';$('listingMeta').replaceChildren();$('researchText').textContent='等待整理 Persona 與內部研究資料。';return;}
+    const product=listing.product, content=listing.content || {}, persona=listing.persona || {};
+    $('productTitle').textContent=product.title || '尚未確認商品標題';$('productTitle').classList.remove('preview-placeholder');
+    $('productCategory').textContent=Array.isArray(product.categoryPath)?product.categoryPath.join(' / '):(product.categoryPath || '商品草稿');
+    $('productDescription').textContent=content.description || '尚未產生商品介紹。';
+    const meta=[];if(product.brand)meta.push(product.brand);if(product.model)meta.push(product.model);if(product.condition)meta.push({new:'全新',used:'二手'}[product.condition] || product.condition);
+    meta.push(listing.sales?.price!=null?`NT$ ${Number(listing.sales.price).toLocaleString('zh-TW')}`:'價格待確認');meta.push(listing.sales?.stock!=null?`庫存 ${listing.sales.stock}`:'庫存待確認');
+    $('listingMeta').replaceChildren(...meta.map(text=>{const chip=document.createElement('span');chip.className='chip';chip.textContent=text;return chip;}));
+    const research=[];if(persona.audience?.length)research.push(`目標受眾｜${listText(persona.audience)}`);if(persona.useCases?.length)research.push(`使用情境｜${listText(persona.useCases)}`);if(persona.painPoints?.length)research.push(`在意的事｜${listText(persona.painPoints)}`);if(persona.positioning)research.push(`溝通方向｜${listText(persona.positioning)}`);
+    if(listing.research)research.push(`研究資料｜${safeText(listing.research)}`);if(listing.internalResearch)research.push(`內部研究｜${safeText(listing.internalResearch)}`);
+    $('researchText').textContent=research.join('\n\n') || '目前沒有提供內部研究資料。';
+    $('reviewTitle').textContent=product.title || '';
+    const fields=[];
+    function flatten(value,path) { if(value && typeof value==='object' && !Array.isArray(value)){for(const [key,item] of Object.entries(value))flatten(item,path?`${path}.${key}`:key);}else fields.push([path,value]); }
+    for(const section of ['product','content','sales','shipping','compliance','media'])if(listing[section])flatten(listing[section],section);
+    $('listingDetails').hidden=false;$('fieldCount').textContent=`${fields.length} 個欄位`;
+    $('listingFields').replaceChildren(...fields.map(([path,value])=>{const row=document.createElement('tr'),key=document.createElement('td'),cell=document.createElement('td');key.textContent=path;cell.textContent=value==null?'null · 待確認':Array.isArray(value)?(value.length?value.join('\n'):'[]'):safeText(value);cell.classList.toggle('unknown',value==null);row.append(key,cell);return row;}));
+    const media=listing.media || {}, paths=Array.isArray(media.imagePaths)?media.imagePaths.filter(path=>typeof path==='string'):[];
+    const imageUrl=path=>`/media/${path.split('/').map(encodeURIComponent).join('/')}`;
+    $('productImage').hidden=!paths.length;
+    $('imageCaption').textContent=!paths.length?'尚未提供商品圖片':media.confirmedProductImages===true?'已確認商品圖片':media.referenceOnly?'參考素材・商品身分待確認':'商品圖片・待核對';
+    $('productImage').alt=media.confirmedProductImages===true?'使用者確認的商品圖片':'尚未核對商品身分的輸入圖片';
+    if(paths.length)$('productImage').src=imageUrl(paths[0]);
+    $('previewThumbs').replaceChildren(...paths.map((path,index)=>{const button=document.createElement('button'),img=document.createElement('img');button.type='button';button.classList.toggle('selected',index===0);button.setAttribute('aria-label',`顯示第 ${index+1} 張圖片：${path}`);img.src=imageUrl(path);img.alt='';button.append(img);button.addEventListener('click',()=>{$('productImage').hidden=false;$('productImage').src=imageUrl(path);$('previewThumbs').querySelectorAll('button').forEach(item=>item.classList.toggle('selected',item===button));});return button;}));
+  }
+  function renderEvents() {
+    const events=state.events || [];const signature=JSON.stringify(events);$('eventCount').textContent=`(${events.length})`;if(signature===eventSignature)return;eventSignature=signature;
+    $('eventList').replaceChildren(...events.slice(-50).reverse().map(event=>{const row=document.createElement('div');row.className=`event-row ${event.level==='error'?'error':''}`;const time=document.createElement('time');const date=new Date(event.time);time.textContent=Number.isNaN(date.getTime())?safeText(event.time).slice(0,8):date.toLocaleTimeString('zh-TW',{hour12:false});const message=document.createElement('span');message.textContent=safeText(event.message);row.append(time,message);return row;}));
+  }
+  function updateScreenshot() {
+    if(!state.browser?.url)return; const now=Date.now(), signature=state.browser.screenshotCapturedAt?String(state.browser.screenshotCapturedAt):String(Math.floor(now/2200));
+    if(now-lastScreenshotAt<2000 || signature===lastScreenshotEvent)return;
+    if(!activePhases.has(state.phase)&&!['published','error'].includes(state.phase))return;
+    lastScreenshotAt=now;lastScreenshotEvent=signature;$('browserScreenshot').src=`/api/screenshot?t=${encodeURIComponent(signature)}`;
+  }
+  function applyState(next) {
+    if(!initialized){initialized=true;const mode=document.querySelector(`input[name="mode"][value="${next.mode==='demo'?'demo':'shopee'}"]`);if(mode)mode.checked=true;}
+    if(next.run_id && next.run_id!==state.run_id){answerDraft.clear();questionSignature='';$('confirmation').value='';lastScreenshotEvent='';lastScreenshotAt=0;$('browserScreenshot').hidden=true;$('browserScreenshot').removeAttribute('src');$('browserEmpty').hidden=false;$('listingDetails').hidden=true;}
+    state=next;
+    const phase=state.phase || 'idle', stage=stageByPhase[phase] ?? 0, mode=activeMode();
+    document.querySelectorAll('.step').forEach(step=>{const i=Number(step.dataset.stage);step.classList.toggle('active',i===stage);step.classList.toggle('done',i<stage);});
+    $('statusText').textContent=phaseLabels[phase] || phase;$('modeBadge').textContent=mode==='shopee'?'真實蝦皮賣家中心':'本機示範環境';$('statusMode').textContent=mode==='shopee'?'SHOPEE':'LOCAL DEMO';
+    const provider=providerMode();$('providerBadge').replaceChildren();const dot=document.createElement('i');dot.className='dot';$('providerBadge').append(dot,document.createTextNode(['openai','api'].includes(provider)?'API 文案':'離線轉換'));
+    $('draftBadge').textContent=state.listing?.product?(['ready','publishing','published'].includes(phase)?'資料已確認':'草稿・待確認'):'等待你的商品資料';
+    $('browserAddress').textContent=state.browser?.url || '等待開啟賣家頁面';setLink($('browserAddress'),state.browser?.url || '');$('browserAddress').title=state.browser?.title || '';
+    if(state.browser?.url){$('browserEmptyTitle').textContent='瀏覽器已開啟';$('browserEmptyText').textContent='正在取得最新實際截圖。你也可以點擊上方按鈕切換至賣家頁。';}
+    $('inputHelp').textContent=phase==='prepared'?'草稿已完成。開啟瀏覽器後，已知的內容會先填入，缺少的資訊會再詢問你。':selectedMode()==='shopee'?'將開啟真實蝦皮賣家中心；登入與發布確認由你操作。':'先整理文案，再開啟一個可見的瀏覽器逐步填寫。';
+    const completed=phase==='published' && state.browser?.completionVerified===true;
+    $('reviewCard').hidden=!['ready','publishing'].includes(phase);$('successCard').hidden=!completed;
+    if(phase==='published'&&!completed)$('statusText').textContent='收到發布狀態，尚缺頁面驗證證據';
+    $('browserActionCard').hidden=phase!=='awaiting_browser';
+    $('browserActionHelp').textContent=state.questions?.find(question=>question.type==='manual')?.reason || '瀏覽器已開啟真實蝦皮賣家中心。請完成登入、驗證或頁面要求的操作，再回來繼續。';
+    $('inputCard').hidden=activePhases.has(phase);$('inputCard').style.order=0;$('questionsCard').style.order=1;
+    $('browserCard').style.order=activePhases.has(phase)||phase==='published'?0:1;$('draftCard').style.order=activePhases.has(phase)||phase==='published'?1:0;
+    $('publishButton').textContent=phase==='publishing'?'正在確認發布結果…':mode==='shopee'?'確認發布至蝦皮':'確認發布至本機示範頁';
+    $('reviewHelp').textContent=mode==='shopee'?'查看真實賣家頁面，核對圖片、價格、庫存與運送資訊。確認後會提交真實商品。':'查看賣家頁面的預覽，核對圖片、價格、庫存與運送資訊。本次只發布至本機示範頁。';
+    $('successHeading').textContent=mode==='shopee'?'商品已發布。':'示範商品已發布。';$('successText').textContent=mode==='shopee'?'賣家頁面已回報發布成功，請至賣家中心確認商品狀態。':'賣家頁面已回報發布成功。本次操作只發生在本機示範環境。';
+    $('completionEvidence').textContent=phase==='published'?(state.browser?.completionEvidence || '已依目前賣家頁面的成功狀態核對結果。'):'';
+    const resultUrl=state.browser?.resultUrl || state.browser?.url;$('resultLink').hidden=!completed || !setLink($('resultLink'),resultUrl || '');
+    $('providerHelp').textContent=$('useAi').checked?'將使用伺服器 .env 已設定的 API；失敗會顯示錯誤，不會自動改為離線文案。':'離線轉換使用固定規則；勾選後會呼叫已設定的 AI 服務。';
+    const warnings=state.warnings || [];$('warnings').hidden=!warnings.length;$('warnings').replaceChildren(...warnings.map(warning=>{const p=document.createElement('p');p.textContent=`ⓘ ${safeText(warning.message || warning)}`;return p;}));
+    renderError();renderListing();renderQuestions();renderEvents();renderControls();updateScreenshot();
+  }
+  async function poll() { if(polling)return;polling=true;try{const next=await api('/api/state');connectionError='';applyState(next);}catch(error){connectionError=`無法取得工作室狀態：${error.message}`;renderError();}finally{polling=false;} }
+  async function loadExample(initial=false) { try{const example=await api('/api/example');if(initial&&inputChanged)return;$('jsonInput').value=JSON.stringify(example,null,2);$('brief').value='';$('importStatus').textContent='已載入開放式耳機範例 · 研究標籤保留內部使用';inputChanged=true;setError('');}catch(error){setError(`無法載入示範資料：${error.message}`);} }
+  function parseInput() {
+    const source=$('jsonInput').value.replace(/^\uFEFF/,'').trim(), brief=$('brief').value.trim();
+    if(!source&&!brief)throw new Error('請先貼上 Persona 文字或商品 JSON。');
+    if(new TextEncoder().encode(source+brief).length>200000)throw new Error('資料太大，請縮短至 200 KB 以內；圖片請使用路徑。');
+    let input;
+    if(/^[\[{]/.test(source)){try{input=JSON.parse(source);}catch{throw new Error('JSON 格式不完整，請檢查引號、逗號與括號。');}if(!input || typeof input!=='object' || Array.isArray(input))throw new Error('JSON 請提供一個物件，例如 {"product": {...}, "persona": {...}}。');}
+    else input={personaBrief:source || brief};
+    if(brief && source){const target=input.listing && typeof input.listing==='object' && !Array.isArray(input.listing)?input.listing:input;const original=target.personaBrief || target.persona_brief || '';target.personaBrief=[original,brief].filter(Boolean).join('\n');delete target.persona_brief;}
+    return input;
+  }
+  $('exampleButton').addEventListener('click',()=>loadExample());
+  $('jsonInput').addEventListener('input',()=>{inputChanged=true;$('importStatus').textContent='編輯中的 Persona / 商品資料 · 支援 JSON 或純文字';});$('brief').addEventListener('input',()=>{inputChanged=true;});
+  $('importButton').addEventListener('click',()=>$('importFile').click());
+  $('importFile').addEventListener('change',async()=>{const file=$('importFile').files[0];if(!file)return;importBusy=true;renderControls();try{if(file.size>200000)throw new Error('匯入檔案需小於 200 KB；圖片請使用 JSON 中的本機路徑。');const content=(await file.text()).replace(/^\uFEFF/,'');if(!content.trim())throw new Error('檔案內容是空的。');$('jsonInput').value=content;$('brief').value='';inputChanged=true;$('importStatus').textContent=`已匯入 ${file.name} · 請檢查後產生草稿`;setError('');}catch(error){setError(error.message);}finally{importBusy=false;$('importFile').value='';renderControls();}});
+  $('prepareButton').addEventListener('click',()=>{try{action('/api/prepare',{input:parseInput(),use_ai:$('useAi').checked});}catch(error){setError(error.message);$('jsonInput').focus();}});
+  $('startButton').addEventListener('click',()=>action('/api/start',{mode:selectedMode()}));
+  $('answersForm').addEventListener('submit',event=>{event.preventDefault();if(!$('answersForm').reportValidity())return;const answers={};for(const control of $('answersForm').querySelectorAll('input,select,textarea')){if(control.value.trim()==='')continue;let value=control.value;const type=control.dataset.type;if(['number','integer'].includes(type)){value=Number(value);if(!Number.isFinite(value)){setError('數字欄位請填入有效數值。');return;}}else if(type==='boolean')value=value==='true';answers[control.name]=value;}if(!Object.keys(answers).length){setError('請先填入至少一項已確認的資訊。');return;}action('/api/answers',{answers});});
+  $('demoValuesButton').addEventListener('click',()=>{if(activeMode()!=='demo')return;const values={'sales.price':1290,'sales.stock':10,'product.condition':'new','shipping.weightKg':0.25,'shipping.packageSizeCm.length':20,'shipping.packageSizeCm.width':15,'shipping.packageSizeCm.height':8,'shipping.dangerousGoods':false,'compliance.connectionType':'wireless','compliance.hasBSMI':false,'compliance.hasNCC':false};for(const question of state.questions || []){if(!question.required || !(question.path in values))continue;const control=document.getElementById(`q-${question.path}`);if(control){control.value=String(values[question.path]);answerDraft.set(question.path,control.value);}}renderControls();});
+  $('focusButton').addEventListener('click',async()=>{try{setError('');await api('/api/focus',{});}catch(error){setError(error.message);}});
+  $('loginFocusButton').addEventListener('click',()=>$('focusButton').click());$('loginResumeButton').addEventListener('click',()=>action('/api/resume',{}));
+  $('resumeButton').addEventListener('click',()=>action('/api/resume',{}));$('manualResumeButton').addEventListener('click',()=>action('/api/resume',{}));$('confirmation').addEventListener('input',renderControls);$('publishButton').addEventListener('click',()=>action('/api/publish',{confirmation:$('confirmation').value}));
+  $('useAi').addEventListener('change',()=>applyState(state));
+  document.querySelectorAll('input[name="mode"]').forEach(input=>input.addEventListener('change',()=>applyState(state)));
+  $('productImage').addEventListener('error',()=>{$('productImage').hidden=true;$('imageCaption').textContent='圖片預覽不可用 · 請確認檔案路徑';});
+  $('productImage').addEventListener('load',()=>{$('productImage').hidden=false;});
+  $('browserScreenshot').addEventListener('load',()=>{$('browserScreenshot').hidden=false;$('browserEmpty').hidden=true;const captured=state.browser?.screenshotCapturedAt?new Date(state.browser.screenshotCapturedAt*1000):new Date();$('screenshotLabel').textContent=`實際畫面 · ${captured.toLocaleTimeString('zh-TW',{hour12:false})}`;});
+  $('browserScreenshot').addEventListener('error',()=>{$('browserScreenshot').hidden=true;$('browserEmpty').hidden=false;$('screenshotLabel').textContent='等待新截圖';});
+  Promise.all([poll(),loadExample(true)]);setInterval(poll,1100);
+})();
+</script>
+</body>
+</html>

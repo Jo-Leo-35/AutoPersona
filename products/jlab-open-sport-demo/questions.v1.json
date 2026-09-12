@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "questions": [
+    {
+      "path": "product.condition",
+      "label": "商品狀況",
+      "type": "select",
+      "required": true,
+      "reason": "目前既有頁面已有值，維持現場值；新建商品或變更時再確認。",
+      "options": [
+        "new",
+        "used"
+      ],
+      "observedValue": "new",
+      "askWhen": "creating_new_listing_or_observed_value_changes"
+    },
+    {
+      "path": "product.gtin",
+      "label": "GTIN 商品條碼",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "product.noValidGtin",
+      "label": "已確認沒有有效 GTIN",
+      "type": "boolean",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "sales.price",
+      "label": "售價（TWD）",
+      "type": "number",
+      "required": true,
+      "reason": "目前既有頁面已有值，維持現場值；新建商品或變更時再確認。",
+      "observedValue": 3990,
+      "askWhen": "creating_new_listing_or_observed_value_changes"
+    },
+    {
+      "path": "sales.stock",
+      "label": "庫存數量",
+      "type": "integer",
+      "required": true,
+      "reason": "目前既有頁面已有值，維持現場值；新建商品或變更時再確認。",
+      "observedValue": 1,
+      "askWhen": "creating_new_listing_or_observed_value_changes"
+    },
+    {
+      "path": "shipping.weightKg",
+      "label": "包裹重量（kg）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "shipping.packageSizeCm.width",
+      "label": "包裹寬度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "shipping.packageSizeCm.length",
+      "label": "包裹長度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "shipping.packageSizeCm.height",
+      "label": "包裹高度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "shipping.dangerousGoods",
+      "label": "是否為危險物品",
+      "type": "boolean",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "compliance.warrantyPeriod",
+      "label": "保固期限",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "askWhen": "required_by_current_page_or_explicit_update"
+    },
+    {
+      "path": "media.imagePaths",
+      "label": "商品圖片路徑（每行一個）",
+      "type": "array",
+      "required": true,
+      "reason": "現場既有商品保留 2 張圖片；本輪沒有新增或替換圖片操作。",
+      "askWhen": "adding_or_replacing_existing_images"
+    },
+    {
+      "path": "media.confirmedProductImages",
+      "label": "圖片已確認為本次販售商品",
+      "type": "boolean",
+      "required": false,
+      "reason": "現場既有商品保留 2 張圖片；本輪沒有新增或替換圖片操作。",
+      "askWhen": "adding_or_replacing_existing_images"
+    }
+  ],
+  "blockers": [],
+  "alreadyObservedOnExistingPage": {
+    "sales.price": {
+      "value": 3990,
+      "sourceFile": "products/jlab-image-demo/confirmed-facts.json",
+      "sourceType": "current_browser_observed",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false,
+      "reportedBy": "/root/browser_flow"
+    },
+    "sales.stock": {
+      "value": 1,
+      "sourceFile": "products/jlab-image-demo/confirmed-facts.json",
+      "sourceType": "current_browser_observed",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false,
+      "reportedBy": "/root/browser_flow"
+    },
+    "product.condition": {
+      "value": "new",
+      "pageLabel": "全新",
+      "sourceFile": "products/jlab-image-demo/observed-site-state.json",
+      "sourceType": "historical_browser_observation",
+      "action": "verify_current_page_and_retain_existing_value",
+      "applyToCanonicalListing": false,
+      "currentObservationConfirmed": false
+    }
+  },
+  "instruction": "先完成可填欄位；僅於實站要求缺少資料時集中提問。既有價格、庫存、圖片及商品狀況保留。"
+}

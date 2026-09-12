@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0.0",
+  "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+  "source": {
+    "type": "current_user_message",
+    "date": "2026-09-12",
+    "verificationStatus": "user_supplied",
+    "independentExternalVerificationCompleted": false
+  },
+  "specifications": {
+    "bluetoothVersion": "5.3",
+    "driver": {
+      "type": "dynamic",
+      "diameterMm": 14.2
+    },
+    "ipRating": {
+      "value": "IP55",
+      "appliesTo": "earbuds_only"
+    },
+    "audioCodecs": [
+      "SBC",
+      "AAC"
+    ],
+    "audioCodecSourceNote": "使用者原文 SBC, AAC (free)；free 不轉成售價、贈品或訂閱宣稱。",
+    "profiles": [
+      "HSP",
+      "HFP",
+      "A2DP",
+      "AVRCP"
+    ],
+    "microphone": {
+      "type": "MEMS",
+      "sensitivityDb": -38,
+      "toleranceDb": 1
+    },
+    "frequencyResponseHz": {
+      "min": 20,
+      "max": 20000
+    },
+    "weightG": {
+      "singleEarbud": 9.4,
+      "chargingCase": 36.8
+    },
+    "playtimeHours": {
+      "singleEarbud": "9+",
+      "chargingCaseAdditional": 17,
+      "total": 26
+    },
+    "chargingCaseBatteryMah": 500,
+    "chargeTimeHours": {
+      "value": 2,
+      "approximate": true
+    },
+    "chargeConnector": "Type-C",
+    "earphoneDesign": "open-ear"
+  },
+  "certifications": {
+    "ncc": {
+      "left": "CCAH24LPA380T2",
+      "right": "CCAH24LPA390T5"
+    },
+    "bsmi": "R3B170"
+  },
+  "packageContents": [
+    "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+    "USB-C 充電線"
+  ],
+  "notSupplied": [
+    "本輪售價",
+    "本輪庫存",
+    "包裹重量及尺寸",
+    "保固",
+    "GTIN",
+    "商品狀況"
+  ],
+  "notes": [
+    "9.4 g／36.8 g 是耳機與充電盒重量，不是物流包裹重量。",
+    "不沿用舊圖片推斷之入耳式分類。",
+    "NCC 左右耳完整字號保留在描述，单碼表單可依實站限制採左耳值。"
+  ]
+}

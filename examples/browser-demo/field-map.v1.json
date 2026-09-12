@@ -1,0 +1,350 @@
+{
+  "schemaVersion": "1.0.0",
+  "exampleId": "open-ear-caregiver-demo",
+  "destination": "shopee_seller_draft",
+  "researchExcluded": true,
+  "allowPublish": false,
+  "entries": [
+    {
+      "path": "product.title",
+      "label": "商品名稱",
+      "value": "開放式耳機｜父母與照護者選購參考",
+      "status": "ready",
+      "fillable": true,
+      "required": true,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "product.categoryPath",
+      "label": "商品分類路徑",
+      "value": [
+        "影音",
+        "耳機/耳麥/藍牙耳機"
+      ],
+      "status": "needs_page_choice",
+      "fillable": false,
+      "required": true,
+      "reason": "先核對實際賣家頁面的分類選項；已提供路徑也不當成現行網站證據。"
+    },
+    {
+      "path": "product.brand",
+      "label": "品牌（確認後填寫）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "product.model",
+      "label": "完整型號（確認後填寫）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "product.condition",
+      "label": "商品狀況",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "product.gtin",
+      "label": "GTIN 商品條碼",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "product.noValidGtin",
+      "label": "已確認沒有有效 GTIN",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "sales.price",
+      "label": "售價（TWD）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "sales.stock",
+      "label": "庫存數量",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "sales.minPurchaseQty",
+      "label": "最低購買數量",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.weightKg",
+      "label": "包裹重量（kg）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.packageSizeCm.width",
+      "label": "包裹寬度（cm）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.packageSizeCm.length",
+      "label": "包裹長度（cm）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.packageSizeCm.height",
+      "label": "包裹高度（cm）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.dangerousGoods",
+      "label": "是否為危險物品",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.hasBSMI",
+      "label": "是否具有 BSMI 認證",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.hasNCC",
+      "label": "是否具有 NCC 認證",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.bsmiNumber",
+      "label": "BSMI 認證字號",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.nccNumber",
+      "label": "NCC 認證字號",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.warrantyPeriod",
+      "label": "保固期限",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.warrantyType",
+      "label": "保固方式",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.packageContents",
+      "label": "實際包裝內容",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.connectionType",
+      "label": "連線方式",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.headphoneType",
+      "label": "耳機類型（依實際頁面選項）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "media.imagePaths",
+      "label": "商品圖片路徑（每行一個）",
+      "value": [],
+      "status": "withheld",
+      "fillable": false,
+      "required": true,
+      "reason": "僅供參考或尚未獲本回合上傳確認；先不選取檔案。"
+    },
+    {
+      "path": "media.confirmedProductImages",
+      "label": "圖片已確認為本次販售商品",
+      "value": false,
+      "status": "local_control",
+      "fillable": false,
+      "required": false,
+      "reason": "本機確認資訊；不是賣家表單欄位，也不能從參考圖片推定。"
+    },
+    {
+      "path": "media.uploadAuthorized",
+      "label": "使用者已指定上傳這些圖片",
+      "value": false,
+      "status": "local_control",
+      "fillable": false,
+      "required": false,
+      "reason": "本機確認資訊；不是賣家表單欄位，也不能從參考圖片推定。"
+    },
+    {
+      "path": "media.videoPath",
+      "label": "商品影片路徑",
+      "value": null,
+      "status": "withheld",
+      "fillable": false,
+      "required": false,
+      "reason": "僅供參考或尚未獲本回合上傳確認；先不選取檔案。"
+    },
+    {
+      "path": "persona.audience",
+      "label": "目標客群",
+      "value": [
+        "需要保持環境感知的父母／照護者"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.useCases",
+      "label": "使用情境",
+      "value": [
+        "照護時希望留意周遭動靜"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.painPoints",
+      "label": "購買者需求",
+      "value": [
+        "選購耳機時在意環境聲音的察覺"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.positioning",
+      "label": "商品定位",
+      "value": "以父母／照護者的選購需求為出發點",
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.competitors",
+      "label": "比較對象",
+      "value": [],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "content.description",
+      "label": "商品描述",
+      "value": "給需要留意周遭動靜的父母與照護者，整理開放式耳機的選購方向。\n\n照護日常中，除了個人的聆聽需求，也會在意環境聲音的察覺。選購時，可先釐清使用情境，再依已確認的商品資料評估。\n\n商品規格、包裝內容與保固資訊，請以後續確認的實際商品資料為準。",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "content.highlights",
+      "label": "文案重點",
+      "value": [
+        "選購考量：照護時希望留意周遭動靜",
+        "選購考量：在意環境聲音的察覺"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "content.keywords",
+      "label": "搜尋關鍵字",
+      "value": [
+        "開放式耳機",
+        "父母",
+        "照護者",
+        "環境感知"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    }
+  ]
+}

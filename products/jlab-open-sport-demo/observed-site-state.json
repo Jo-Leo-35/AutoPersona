@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceType": "browser_observed_with_historical_reference",
+  "notUserConfirmedInCurrentTurn": true,
+  "existingProductId": "43834400022",
+  "requiresCurrentPageCheck": false,
+  "observedFields": {
+    "sales.price": {
+      "value": 3990,
+      "sourceFile": "products/jlab-image-demo/confirmed-facts.json",
+      "sourceType": "current_browser_observed",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false,
+      "reportedBy": "/root/browser_flow"
+    },
+    "sales.stock": {
+      "value": 1,
+      "sourceFile": "products/jlab-image-demo/confirmed-facts.json",
+      "sourceType": "current_browser_observed",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false,
+      "reportedBy": "/root/browser_flow"
+    },
+    "product.condition": {
+      "value": "new",
+      "pageLabel": "全新",
+      "sourceFile": "products/jlab-image-demo/observed-site-state.json",
+      "sourceType": "historical_browser_observation",
+      "action": "verify_current_page_and_retain_existing_value",
+      "applyToCanonicalListing": false,
+      "currentObservationConfirmed": false
+    }
+  },
+  "fieldMappings": {
+    "compliance.headphoneType": {
+      "value": "開放式",
+      "sourceType": "user_supplied_product_type",
+      "action": "match_current_page_option"
+    },
+    "compliance.nccNumber": {
+      "value": "CCAH24LPA380T2",
+      "sourceFile": "products/jlab-image-demo/observed-site-state.json",
+      "sourceType": "historical_browser_observation",
+      "acceptsSingleCertificateOnly": true,
+      "action": "verify_current_page_constraint",
+      "fullEarMappingLocation": "product-facts.json.certifications.ncc",
+      "currentFieldValueConfirmed": true,
+      "reportedBy": "/root/browser_flow"
+    }
+  },
+  "reportedBy": "/root/browser_flow",
+  "observedOn": "2026-09-12",
+  "media": {
+    "imageCount": 2,
+    "sourceType": "current_browser_observed",
+    "reportedBy": "/root/browser_flow",
+    "action": "retain_existing_images",
+    "newUploadPerformed": false
+  }
+}

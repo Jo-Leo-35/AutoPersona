@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "questions": [
+    {
+      "path": "product.condition",
+      "label": "商品狀況",
+      "type": "select",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "options": [
+        "new",
+        "used"
+      ]
+    },
+    {
+      "path": "product.gtin",
+      "label": "GTIN 商品條碼",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "product.noValidGtin",
+      "label": "已確認沒有有效 GTIN",
+      "type": "boolean",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.weightKg",
+      "label": "包裹重量（kg）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.packageSizeCm.width",
+      "label": "包裹寬度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.packageSizeCm.length",
+      "label": "包裹長度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.packageSizeCm.height",
+      "label": "包裹高度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.dangerousGoods",
+      "label": "是否為危險物品",
+      "type": "boolean",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "compliance.warrantyPeriod",
+      "label": "保固期限",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "compliance.packageContents",
+      "label": "實際包裝內容",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    }
+  ],
+  "blockers": [],
+  "alreadyObservedOnExistingPage": {
+    "product.condition": {
+      "value": "new",
+      "pageLabel": "全新",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false
+    }
+  },
+  "instruction": "僅依實站需要集中提問；商品狀況全新已在既有頁觀測，沿用頁面值，不因本列表再次提問。"
+}

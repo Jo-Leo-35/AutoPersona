@@ -1,0 +1,15 @@
+{
+  "internalOnly": true,
+  "status": "resolved_by_explicit_user_model_and_distributor_source",
+  "currentModel": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+  "source": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+  "productType": "開放式，不入耳",
+  "previousVisualInference": {
+    "value": "入耳式耳塞，帶耳掛",
+    "status": "incorrect_and_superseded",
+    "applyToStorefront": false
+  },
+  "candidateResearchStatus": "stopped_and_superseded",
+  "historyFile": "products/jlab-image-demo/superseded-research.json",
+  "conclusion": "以使用者提供的正式型號與可查來源取代先前低資訊圖片推論；舊候選與入耳式判斷不再適用。"
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceType": "browser_observed",
+  "reportedBy": "root/shopee_browser",
+  "existingProductId": "43834400022",
+  "notUserConfirmedFacts": true,
+  "observedFields": {
+    "product.condition": {
+      "value": "new",
+      "pageLabel": "全新",
+      "action": "retain_existing_value",
+      "applyToCanonicalListing": false
+    }
+  },
+  "fieldMappings": {
+    "compliance.headphoneType": {
+      "value": "開放式",
+      "productType": "開放式，不入耳",
+      "basis": "實站透過新增選項建立並選取「開放式」，依最新瀏覽器觀測保留此精確選項。",
+      "applyToCanonicalListing": true
+    },
+    "compliance.nccNumber": {
+      "value": "CCAH24LPA380T2",
+      "basis": "雙碼觸發「請填寫正確的NCC字號」；實站單碼欄使用左耳，描述保留左右耳完整字號。",
+      "applyToCanonicalListing": false,
+      "acceptsSingleCertificateOnly": true,
+      "mainFieldEar": "left"
+    }
+  },
+  "imageObservation": {
+    "mainImage": "demo-1.png",
+    "referenceOnlyImage": "demo-0.png",
+    "originalSourceCopy": "products/jlab-image-demo/supplied-product.png",
+    "reportedBy": "root",
+    "basis": "主 agent 已查看 demo-1 與使用者指定商品外觀相同；demo-0 是多品牌合照。"
+  }
+}

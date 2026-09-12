@@ -1,9 +1,50 @@
+# Dependencies and generated build/test files
 node_modules/
-.DS_Store
 dist/
 coverage/
 playwright-report/
 test-results/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.log
+
+# Local configuration; keep only the empty, shareable template
 .env
 .env.*
-*.log
+!.env.example
+credentials.json
+credentials.*.json
+credentials/
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Private runs, answers, browser evidence, and video output
+work/
+.autopersona/
+artifacts/
+.recordings/
+recordings/
+
+# Browser sign-in state and recording profiles
+.auth/
+playwright/.auth/
+browser-profile/
+browser-profiles/
+chrome-profile/
+chrome-profiles/
+recording-profile/
+recording-profiles/
+.recording-profile/
+.recording-profiles/
+storage-state*.json
+storage_state*.json
+cookies*.json
+cookies*.txt
+
+# Source code, documentation, examples, and product images remain versioned.

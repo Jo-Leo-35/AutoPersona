@@ -1,0 +1,359 @@
+{
+  "schemaVersion": "1.0.0",
+  "exampleId": "jlab-open-sport-caregiver-2026-09-12",
+  "destination": "shopee_seller_draft",
+  "researchExcluded": true,
+  "allowPublish": false,
+  "entries": [
+    {
+      "path": "product.title",
+      "label": "商品名稱",
+      "value": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機｜藍牙5.3 IP55",
+      "status": "ready",
+      "fillable": true,
+      "required": true,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "product.categoryPath",
+      "label": "商品分類路徑",
+      "value": [
+        "影音",
+        "耳機/耳麥/藍牙耳機"
+      ],
+      "status": "needs_page_choice",
+      "fillable": false,
+      "required": true,
+      "reason": "先核對實際賣家頁面的分類選項；已提供路徑也不當成現行網站證據。"
+    },
+    {
+      "path": "product.brand",
+      "label": "品牌（確認後填寫）",
+      "value": "JLab",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "product.model",
+      "label": "完整型號（確認後填寫）",
+      "value": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "product.condition",
+      "label": "商品狀況",
+      "value": null,
+      "status": "retain_observed",
+      "fillable": false,
+      "required": true,
+      "reason": "歷史頁面曾有此值，核對並保留現場值；不從歷史觀測補成確認答案。",
+      "observedValue": "new"
+    },
+    {
+      "path": "product.gtin",
+      "label": "GTIN 商品條碼",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "product.noValidGtin",
+      "label": "已確認沒有有效 GTIN",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "sales.price",
+      "label": "售價（TWD）",
+      "value": null,
+      "status": "retain_observed",
+      "fillable": false,
+      "required": true,
+      "reason": "既有頁面值已讀回，保留原值；觀測資料不轉為本輪賣家確認答案。",
+      "observedValue": 3990
+    },
+    {
+      "path": "sales.stock",
+      "label": "庫存數量",
+      "value": null,
+      "status": "retain_observed",
+      "fillable": false,
+      "required": true,
+      "reason": "既有頁面值已讀回，保留原值；觀測資料不轉為本輪賣家確認答案。",
+      "observedValue": 1
+    },
+    {
+      "path": "sales.minPurchaseQty",
+      "label": "最低購買數量",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.weightKg",
+      "label": "包裹重量（kg）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.packageSizeCm.width",
+      "label": "包裹寬度（cm）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.packageSizeCm.length",
+      "label": "包裹長度（cm）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.packageSizeCm.height",
+      "label": "包裹高度（cm）",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "shipping.dangerousGoods",
+      "label": "是否為危險物品",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": true,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.hasBSMI",
+      "label": "是否具有 BSMI 認證",
+      "value": true,
+      "status": "ready",
+      "fillable": true,
+      "required": true,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "compliance.hasNCC",
+      "label": "是否具有 NCC 認證",
+      "value": true,
+      "status": "ready",
+      "fillable": true,
+      "required": true,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "compliance.bsmiNumber",
+      "label": "BSMI 認證字號",
+      "value": "R3B170",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "compliance.nccNumber",
+      "label": "NCC 認證字號",
+      "value": "CCAH24LPA380T2",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "compliance.warrantyPeriod",
+      "label": "保固期限",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.warrantyType",
+      "label": "保固方式",
+      "value": null,
+      "status": "needs_answer",
+      "fillable": false,
+      "required": false,
+      "reason": "未知值保留空白，不自動補造。"
+    },
+    {
+      "path": "compliance.packageContents",
+      "label": "實際包裝內容",
+      "value": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機\nUSB-C 充電線",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "compliance.connectionType",
+      "label": "連線方式",
+      "value": "wireless",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "compliance.headphoneType",
+      "label": "耳機類型（依實際頁面選項）",
+      "value": "開放式",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "media.imagePaths",
+      "label": "商品圖片路徑（每行一個）",
+      "value": [],
+      "status": "withheld",
+      "fillable": false,
+      "required": true,
+      "reason": "僅供參考或尚未獲本回合上傳確認；先不選取檔案。"
+    },
+    {
+      "path": "media.confirmedProductImages",
+      "label": "圖片已確認為本次販售商品",
+      "value": false,
+      "status": "local_control",
+      "fillable": false,
+      "required": false,
+      "reason": "本機確認資訊；不是賣家表單欄位，也不能從參考圖片推定。"
+    },
+    {
+      "path": "media.uploadAuthorized",
+      "label": "使用者已指定上傳這些圖片",
+      "value": false,
+      "status": "local_control",
+      "fillable": false,
+      "required": false,
+      "reason": "本機確認資訊；不是賣家表單欄位，也不能從參考圖片推定。"
+    },
+    {
+      "path": "media.videoPath",
+      "label": "商品影片路徑",
+      "value": null,
+      "status": "withheld",
+      "fillable": false,
+      "required": false,
+      "reason": "僅供參考或尚未獲本回合上傳確認；先不選取檔案。"
+    },
+    {
+      "path": "persona.audience",
+      "label": "目標客群",
+      "value": [
+        "需要保持環境感知的父母／照護者"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.useCases",
+      "label": "使用情境",
+      "value": [
+        "照護時希望留意周遭動靜"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.painPoints",
+      "label": "購買者需求",
+      "value": [
+        "選購耳機時在意環境聲音的察覺"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.positioning",
+      "label": "商品定位",
+      "value": "給希望在日常聆聽之餘，仍留意家人與周遭動靜的父母與照護者，提供開放式聆聽選擇。",
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "persona.competitors",
+      "label": "比較對象",
+      "value": [],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "content.description",
+      "label": "商品描述",
+      "value": "給希望在日常聆聽之餘，仍留意家人與周遭動靜的父母與照護者，JLab JBuds OPEN SPORT 提供開放式聆聽選擇。\n\n商品特色\n・開放式運動藍牙耳機，對應在意周遭互動的日常聆聽需求\n・藍牙 5.3，搭載 14.2 mm 動圈單體\n・耳機具 IP55 防水防塵等級\n・單耳續航 9 小時以上，充電盒另供 17 小時，合計約 26 小時\n・Type-C 充電，充電時間約 2 小時\n\n商品規格\n型號：JLab JBuds OPEN SPORT 開放式運動藍牙耳機\n藍牙版本：5.3\n驅動單體：14.2 mm 動圈單體\n防水防塵：IP55（適用耳機）\n音頻解碼：SBC、AAC\n支援協議：HSP／HFP／A2DP／AVRCP\n麥克風：MEMS，-38 dB ±1 dB\n頻率響應：20 Hz–20 kHz\n重量：單耳 9.4 g；充電盒 36.8 g\n續航：單耳 9 小時以上；充電盒另供 17 小時；合計約 26 小時\n充電盒電池容量：500 mAh\n充電時間：約 2 小時\n充電接頭：Type-C\nNCC：左耳 CCAH24LPA380T2；右耳 CCAH24LPA390T5\nBSMI：R3B170\n\n商品內容物\n・JLab JBuds OPEN SPORT 開放式運動藍牙耳機\n・USB-C 充電線\n\n使用提醒\n環境聲感受會受播放音量與周遭噪音影響，使用時仍需留意照護情況；實際續航依使用條件而異。",
+      "status": "ready",
+      "fillable": true,
+      "required": false,
+      "reason": "已提供，可在實際頁面找到對應控制項後填入。"
+    },
+    {
+      "path": "content.highlights",
+      "label": "文案重點",
+      "value": [
+        "開放式運動藍牙耳機",
+        "藍牙 5.3 與 14.2 mm 動圈單體",
+        "IP55 防水防塵（耳機）",
+        "單耳 9 小時以上，含充電盒合計約 26 小時",
+        "Type-C 充電，約 2 小時充電時間"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    },
+    {
+      "path": "content.keywords",
+      "label": "搜尋關鍵字",
+      "value": [
+        "JLab",
+        "JBuds OPEN SPORT",
+        "開放式耳機",
+        "運動藍牙耳機",
+        "藍牙5.3",
+        "IP55"
+      ],
+      "status": "copy_context",
+      "fillable": false,
+      "required": false,
+      "reason": "文案來源；不視為賣家頁面的獨立欄位。"
+    }
+  ],
+  "blockers": []
+}

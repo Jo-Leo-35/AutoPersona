@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "exampleId": "jlab-open-sport-caregiver-2026-09-12",
+  "listing": {
+    "product": {
+      "title": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機｜藍牙5.3 IP55",
+      "categoryPath": [
+        "影音",
+        "耳機/耳麥/藍牙耳機"
+      ],
+      "brand": "JLab",
+      "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+      "condition": null,
+      "gtin": null,
+      "noValidGtin": null
+    },
+    "persona": {
+      "audience": [
+        "需要保持環境感知的父母／照護者"
+      ],
+      "useCases": [
+        "照護時希望留意周遭動靜"
+      ],
+      "painPoints": [
+        "選購耳機時在意環境聲音的察覺"
+      ],
+      "positioning": "給希望在日常聆聽之餘，仍留意家人與周遭動靜的父母與照護者，提供開放式聆聽選擇。",
+      "competitors": []
+    },
+    "content": {
+      "description": "給希望在日常聆聽之餘，仍留意家人與周遭動靜的父母與照護者，JLab JBuds OPEN SPORT 提供開放式聆聽選擇。\n\n商品特色\n・開放式運動藍牙耳機，對應在意周遭互動的日常聆聽需求\n・藍牙 5.3，搭載 14.2 mm 動圈單體\n・耳機具 IP55 防水防塵等級\n・單耳續航 9 小時以上，充電盒另供 17 小時，合計約 26 小時\n・Type-C 充電，充電時間約 2 小時\n\n商品規格\n型號：JLab JBuds OPEN SPORT 開放式運動藍牙耳機\n藍牙版本：5.3\n驅動單體：14.2 mm 動圈單體\n防水防塵：IP55（適用耳機）\n音頻解碼：SBC、AAC\n支援協議：HSP／HFP／A2DP／AVRCP\n麥克風：MEMS，-38 dB ±1 dB\n頻率響應：20 Hz–20 kHz\n重量：單耳 9.4 g；充電盒 36.8 g\n續航：單耳 9 小時以上；充電盒另供 17 小時；合計約 26 小時\n充電盒電池容量：500 mAh\n充電時間：約 2 小時\n充電接頭：Type-C\nNCC：左耳 CCAH24LPA380T2；右耳 CCAH24LPA390T5\nBSMI：R3B170\n\n商品內容物\n・JLab JBuds OPEN SPORT 開放式運動藍牙耳機\n・USB-C 充電線\n\n使用提醒\n環境聲感受會受播放音量與周遭噪音影響，使用時仍需留意照護情況；實際續航依使用條件而異。",
+      "highlights": [
+        "開放式運動藍牙耳機",
+        "藍牙 5.3 與 14.2 mm 動圈單體",
+        "IP55 防水防塵（耳機）",
+        "單耳 9 小時以上，含充電盒合計約 26 小時",
+        "Type-C 充電，約 2 小時充電時間"
+      ],
+      "keywords": [
+        "JLab",
+        "JBuds OPEN SPORT",
+        "開放式耳機",
+        "運動藍牙耳機",
+        "藍牙5.3",
+        "IP55"
+      ]
+    },
+    "compliance": {
+      "hasBSMI": true,
+      "hasNCC": true,
+      "bsmiNumber": "R3B170",
+      "nccNumber": "CCAH24LPA380T2",
+      "warrantyPeriod": null,
+      "warrantyType": null,
+      "packageContents": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機\nUSB-C 充電線",
+      "connectionType": "wireless",
+      "headphoneType": "開放式"
+    },
+    "sales": {
+      "price": null,
+      "stock": null,
+      "minPurchaseQty": null
+    },
+    "shipping": {
+      "weightKg": null,
+      "packageSizeCm": {
+        "width": null,
+        "length": null,
+        "height": null
+      },
+      "dangerousGoods": null
+    },
+    "media": {
+      "imagePaths": [],
+      "videoPath": null,
+      "referenceImagePaths": [
+        "demo-0.png",
+        "demo-1.png"
+      ],
+      "referenceOnly": true,
+      "confirmedProductImages": false,
+      "uploadAuthorized": false
+    },
+    "research": {
+      "internalOnly": true,
+      "matchedReviewCount": 13,
+      "allMatchedReviewsVerifiedPurchase": true,
+      "buyerSegment": "Missed Buyer",
+      "personaBrief": "開放式耳機 | 需要保持環境感知的父母／照護者 | 13 則命中，全部 Verified Purchase | Missed Buyer",
+      "sourceStatement": "本轮使用者提供之商品型號、規格、內容物及 Persona 洞察；本輪未進行外部產品查證。",
+      "reviewUseNote": "研究命中不等於本件商品評價或安全證據，僅用來選擇文案客群與情境。",
+      "identityAssessment": {
+        "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+        "productType": "開放式",
+        "status": "current_user_supplied",
+        "supersededInference": "舊入耳式外觀推論不適用"
+      },
+      "sourceFactsFile": "products/jlab-open-sport-demo/product-facts.json",
+      "observedSiteStateFile": "products/jlab-open-sport-demo/observed-site-state.json",
+      "mediaDecisionNote": "主 agent 與 browser_flow 已核對現場既有 2 張圖；本輪保留原圖，沒有新增上傳。",
+      "copyTrace": [
+        {
+          "source": "persona.audience + persona.painPoints",
+          "result": "第一段以父母與照護者的日常聆聽需求定位",
+          "claimType": "positioning"
+        },
+        {
+          "source": "current_user_product_specifications",
+          "result": "商品特色、規格與內容物",
+          "claimType": "user_supplied_fact"
+        },
+        {
+          "source": "research.matchedReviewCount + research.buyerSegment",
+          "result": "只在內部控制室顯示，不複製至商品頁",
+          "claimType": "internal_research"
+        }
+      ]
+    },
+    "automation": {
+      "mode": "draft_only",
+      "allowPublish": false
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "answers": {
+    "product.brand": "JLab",
+    "product.model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+    "compliance.hasBSMI": true,
+    "compliance.hasNCC": true,
+    "compliance.bsmiNumber": "R3B170",
+    "compliance.nccNumber": "CCAH24LPA380T2",
+    "compliance.packageContents": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機\nUSB-C 充電線",
+    "compliance.connectionType": "wireless",
+    "compliance.headphoneType": "開放式"
+  },
+  "sources": {
+    "product.brand": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "product.model": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.hasBSMI": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.hasNCC": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.bsmiNumber": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.nccNumber": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.packageContents": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.connectionType": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    },
+    "compliance.headphoneType": {
+      "type": "current_user_message",
+      "date": "2026-09-12",
+      "verificationStatus": "user_supplied"
+    }
+  },
+  "productFactsFile": "products/jlab-open-sport-demo/product-facts.json",
+  "observedValuesAreNotConfirmedAnswers": true
+}

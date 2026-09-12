@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "exampleId": "replace-with-source-id",
+  "listing": {
+    "product": {
+      "title": null,
+      "categoryPath": [],
+      "brand": null,
+      "model": null,
+      "condition": null,
+      "gtin": null,
+      "noValidGtin": null
+    },
+    "persona": {
+      "audience": [],
+      "useCases": [],
+      "painPoints": [],
+      "positioning": null,
+      "competitors": []
+    },
+    "content": {
+      "description": null,
+      "highlights": [],
+      "keywords": []
+    },
+    "compliance": {
+      "hasBSMI": null,
+      "hasNCC": null,
+      "bsmiNumber": null,
+      "nccNumber": null,
+      "warrantyPeriod": null,
+      "warrantyType": null,
+      "packageContents": null,
+      "connectionType": null,
+      "headphoneType": null
+    },
+    "sales": {
+      "price": null,
+      "stock": null,
+      "minPurchaseQty": null
+    },
+    "shipping": {
+      "weightKg": null,
+      "packageSizeCm": {
+        "width": null,
+        "length": null,
+        "height": null
+      },
+      "dangerousGoods": null
+    },
+    "media": {
+      "imagePaths": [],
+      "videoPath": null,
+      "referenceImagePaths": [],
+      "referenceOnly": null,
+      "confirmedProductImages": null,
+      "uploadAuthorized": null
+    },
+    "research": {
+      "internalOnly": true
+    },
+    "automation": {
+      "mode": "draft_only",
+      "allowPublish": false
+    },
+    "personaBrief": null
+  }
+}

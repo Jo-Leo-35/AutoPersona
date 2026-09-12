@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoPersona 蝦皮上架"
+  short_description: "Persona JSON 驅動的可見 Chrome 上架、快速重播與結果核對"
+  default_prompt: "使用 $autopersona-listing，依本輪 Persona JSON 在可見 Chrome 完成蝦皮商品填寫與儲存核對。"

@@ -1,0 +1,35 @@
+{
+  "internalOnly": true,
+  "matchedReviewCount": 13,
+  "allMatchedReviewsVerifiedPurchase": true,
+  "buyerSegment": "Missed Buyer",
+  "personaBrief": "開放式耳機 | 需要保持環境感知的父母／照護者 | 13 則命中，全部 Verified Purchase | Missed Buyer",
+  "sourceStatement": "本轮使用者提供之商品型號、規格、內容物及 Persona 洞察；本輪未進行外部產品查證。",
+  "reviewUseNote": "研究命中不等於本件商品評價或安全證據，僅用來選擇文案客群與情境。",
+  "identityAssessment": {
+    "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+    "productType": "開放式",
+    "status": "current_user_supplied",
+    "supersededInference": "舊入耳式外觀推論不適用"
+  },
+  "sourceFactsFile": "products/jlab-open-sport-demo/product-facts.json",
+  "observedSiteStateFile": "products/jlab-open-sport-demo/observed-site-state.json",
+  "mediaDecisionNote": "主 agent 與 browser_flow 已核對現場既有 2 張圖；本輪保留原圖，沒有新增上傳。",
+  "copyTrace": [
+    {
+      "source": "persona.audience + persona.painPoints",
+      "result": "第一段以父母與照護者的日常聆聽需求定位",
+      "claimType": "positioning"
+    },
+    {
+      "source": "current_user_product_specifications",
+      "result": "商品特色、規格與內容物",
+      "claimType": "user_supplied_fact"
+    },
+    {
+      "source": "research.matchedReviewCount + research.buyerSegment",
+      "result": "只在內部控制室顯示，不複製至商品頁",
+      "claimType": "internal_research"
+    }
+  ]
+}

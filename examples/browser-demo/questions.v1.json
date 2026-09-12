@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "questions": [
+    {
+      "path": "product.brand",
+      "label": "品牌（確認後填寫）",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "product.model",
+      "label": "完整型號（確認後填寫）",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "product.condition",
+      "label": "商品狀況",
+      "type": "select",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。",
+      "options": [
+        "new",
+        "used"
+      ]
+    },
+    {
+      "path": "product.gtin",
+      "label": "GTIN 商品條碼",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "product.noValidGtin",
+      "label": "已確認沒有有效 GTIN",
+      "type": "boolean",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "sales.price",
+      "label": "售價（TWD）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "sales.stock",
+      "label": "庫存數量",
+      "type": "integer",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.weightKg",
+      "label": "包裹重量（kg）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.packageSizeCm.width",
+      "label": "包裹寬度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.packageSizeCm.length",
+      "label": "包裹長度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.packageSizeCm.height",
+      "label": "包裹高度（cm）",
+      "type": "number",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "shipping.dangerousGoods",
+      "label": "是否為危險物品",
+      "type": "boolean",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "compliance.hasBSMI",
+      "label": "是否具有 BSMI 認證",
+      "type": "boolean",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "compliance.hasNCC",
+      "label": "是否具有 NCC 認證",
+      "type": "boolean",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "compliance.warrantyPeriod",
+      "label": "保固期限",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "compliance.packageContents",
+      "label": "實際包裝內容",
+      "type": "text",
+      "required": false,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "media.imagePaths",
+      "label": "商品圖片路徑（每行一個）",
+      "type": "array",
+      "required": true,
+      "reason": "尚未提供，請依實際商品資料確認；不會自動推測。"
+    },
+    {
+      "path": "media.confirmedProductImages",
+      "label": "圖片已確認為本次販售商品",
+      "type": "boolean",
+      "required": false,
+      "reason": "使用者指定上傳與商品身分核對是兩件事；請在發布前確認圖片與實際販售商品一致。"
+    }
+  ]
+}

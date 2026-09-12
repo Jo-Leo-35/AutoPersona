@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "model": "JLab JBuds OPEN SPORT 開放式運動藍牙耳機",
+  "source": {
+    "type": "user_message_with_taiwan_distributor_corroboration",
+    "url": "https://store.igogosport.com/products/jlab-jbuds-open-sport",
+    "accessedOn": "2026-09-12",
+    "relevantSection": "商品規格及產品特色，非頁面摘要標題",
+    "verificationStatus": "matched_product_page"
+  },
+  "specifications": {
+    "bluetoothVersion": "5.3",
+    "driver": {
+      "type": "dynamic",
+      "diameterMm": 14.2
+    },
+    "ipRating": {
+      "value": "IP55",
+      "appliesTo": "earbuds_only"
+    },
+    "audioCodecs": [
+      "SBC",
+      "AAC"
+    ],
+    "audioCodecSourceNote": "官方原文 SBC, AAC (free)；free 不作本賣場贈品或價格主張。",
+    "profiles": [
+      "HSP",
+      "HFP",
+      "A2DP",
+      "AVRCP"
+    ],
+    "microphone": {
+      "type": "MEMS",
+      "sensitivityDb": -38,
+      "toleranceDb": 1
+    },
+    "frequencyResponseHz": {
+      "min": 20,
+      "max": 20000
+    },
+    "weightG": {
+      "singleEarbud": 9.4,
+      "chargingCase": 36.8
+    },
+    "playtimeHours": {
+      "singleEarbud": "9+",
+      "chargingCaseAdditional": 17,
+      "total": 26,
+      "qualifier": "依音量、連線與使用條件而異"
+    },
+    "chargingCaseBatteryMah": 500,
+    "chargeTimeHours": {
+      "value": 2,
+      "approximate": true
+    },
+    "chargeConnector": "Type-C",
+    "earphoneDesign": "open-ear",
+    "earhook": "adjustable",
+    "color": "black"
+  },
+  "certifications": {
+    "ncc": {
+      "left": "CCAH24LPA380T2",
+      "right": "CCAH24LPA390T5"
+    },
+    "bsmi": "R3B170",
+    "independentGovernmentDatabaseMatchCompleted": false
+  },
+  "doNotImportFromRetailer": [
+    "零售頁價格或庫存",
+    "零售商運費或退貨條款",
+    "本件未確認保固資格與完整配件清單"
+  ],
+  "sourceCaveats": [
+    "頁面摘要標題含20小時，但商品特色與規格段均列26小時；本案依使用者規格及正文26小時。"
+  ]
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoPersona｜展示控制室</title>
+  <style>
+    :root{--bg:#f4f3ee;--paper:#fff;--ink:#173b39;--muted:#637472;--line:#dfe7e2;--green:#176d59;--soft:#e9f2ec;--amber:#986518;--warn:#fbf0da;--red:#a64537}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif}
+    button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:var(--green)}.wrap{max-width:1320px;margin:auto;padding:34px 42px 22px}
+    .topline,.topright,.sectionhead,.stagehead{display:flex;align-items:center;gap:12px}.topline,.sectionhead{justify-content:space-between}.brand{font-size:18px;font-weight:750;letter-spacing:-.4px}.brand i{display:inline-block;width:12px;height:12px;border-radius:4px;background:var(--green);margin-right:9px;transform:rotate(12deg)}
+    .pill{font-size:12px;border:1px solid var(--line);background:#fff;padding:5px 11px;border-radius:30px;white-space:nowrap}.live{color:var(--green)}.live:before{content:"";width:6px;height:6px;background:currentColor;border-radius:50%;display:inline-block;margin-right:6px}.muted{color:var(--muted)}
+    .hero{padding:40px 0 29px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--green);margin-bottom:8px}h1{font-size:32px;line-height:1.35;margin:0 0 10px;letter-spacing:-1px}h2{font-size:17px;margin:0}h3{font-size:14px;margin:0 0 8px}.hero p{margin:0;max-width:740px;color:var(--muted)}.run{text-align:right;font-size:12px;min-width:180px;overflow-wrap:anywhere}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:var(--paper);border-radius:16px;overflow:hidden;margin-bottom:23px}.stage{padding:18px 20px;border-right:1px solid var(--line);position:relative;min-height:125px}.stage:last-child{border:0}.stage.running,.stage.waiting{background:var(--soft)}.stage.blocked{background:var(--warn)}.stagehead{justify-content:space-between;font-size:12px;color:var(--muted)}.stage b{display:block;margin:9px 0 2px;font-size:15px}.stage p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}.stepnum{font-variant-numeric:tabular-nums;letter-spacing:1px}.tag{font-size:11px;color:var(--muted)}.done .tag{color:var(--green)}.waiting .tag,.blocked .tag{color:var(--amber)}
+    .grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr);gap:23px}.column{display:flex;flex-direction:column;gap:23px}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:23px 25px}.sectionhead{margin-bottom:16px}.sectionmeta{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}.note{font-size:12px;color:var(--muted);margin:10px 0 0}.content{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}.evidence{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0 0;padding:0;list-style:none}.evidence li{font-size:12px;background:var(--soft);padding:5px 9px;border-radius:6px}.inset{background:#f7f8f5;border-radius:9px;padding:15px 17px}.copytitle{font-weight:600;margin:0 0 10px}.copybody{font-size:14px;max-height:295px;overflow:auto;white-space:pre-wrap;margin:0}.empty{color:var(--muted);font-size:14px}.browserlink{display:inline-block;margin-top:12px;text-decoration:none;font-size:13px}.browserlink:after{content:" ↗"}.verification{margin:12px 0 0;padding-left:19px;font-size:13px;color:var(--muted)}
+    .question{margin-top:18px}.question label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}.question .required{color:var(--amber);font-size:11px;font-weight:400;margin-left:7px}.question small{display:block;color:var(--muted);font-size:12px;margin:0 0 7px}input,textarea,select{width:100%;padding:10px 12px;border:1px solid #cbd8d0;border-radius:7px;background:#fff;color:var(--ink)}textarea{resize:vertical;min-height:92px}input:focus,textarea:focus,select:focus{outline:2px solid #b3d6c7;outline-offset:1px}button{background:var(--green);color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:13px;font-weight:600}button:disabled{opacity:.5;cursor:wait}.actions{display:flex;align-items:center;gap:12px;margin-top:18px}.save-message{font-size:12px;color:var(--green)}.save-message.error{color:var(--red)}
+    .timeline{margin:0;padding:0;list-style:none}.timeline li{display:grid;grid-template-columns:49px 1fr;gap:12px;font-size:12px;padding:8px 0;border-bottom:1px solid #edf0ec}.timeline li:last-child{border:0}.timeline time{color:var(--muted);font-variant-numeric:tabular-nums}.footer{display:flex;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted);margin-top:25px}.connection-error{color:var(--red)}[hidden]{display:none!important}
+    @media(max-width:900px){.wrap{padding:24px}.hero{padding-top:28px}.grid{grid-template-columns:1fr}.flow{grid-template-columns:repeat(5,minmax(125px,1fr));overflow-x:auto}.stage{padding:15px}.run{display:none}h1{font-size:28px}.footer{flex-direction:column;gap:4px}}
+    @media(max-width:550px){.wrap{padding:18px}.topright .pill:first-child{display:none}.card{padding:20px}.hero{padding:27px 0 22px}h1{font-size:25px}.flow{margin-left:0}.topline{gap:8px}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <header class="topline"><div class="brand"><i></i>AutoPersona</div><div class="topright"><span class="pill">第一階段 · Codex 真實 Chrome</span><span class="pill live" id="connection">連線中</span></div></header>
+  <section class="hero"><div><div class="eyebrow">BROWSER DEMO / CONTROL ROOM</div><h1 id="title">從 Persona 洞察，到真實商品頁</h1><p id="summary">等待主流程提供展示進度。此頁顯示實際回報，不會自行執行瀏覽器操作。</p></div><div class="run"><div id="run">尚未開始</div><div class="muted" id="updated">等待進度資料</div></div></section>
+  <nav class="flow" id="stages" aria-label="展示進度"></nav>
+  <div class="grid">
+    <div class="column">
+      <section class="card"><div class="sectionhead"><h2>Persona 洞察</h2><span class="sectionmeta">內部研究</span></div><h3 id="persona-title">等待 Persona 資料</h3><p class="content empty" id="persona-summary">研究結果會在主流程載入後顯示。</p><ul class="evidence" id="evidence"></ul><p class="note" id="persona-note">Persona 研究用於內部定位，不作為此商品的消費者評價。</p></section>
+      <section class="card" id="product-card" hidden><div class="sectionhead"><h2>已確認商品</h2><span class="sectionmeta" id="product-source">使用者資料</span></div><h3 id="product-title"></h3><p class="content" id="product-summary"></p><ul class="evidence" id="product-facts"></ul><p class="note" id="product-reference"></p></section>
+      <section class="card"><div class="sectionhead"><h2>商品文案</h2><span class="sectionmeta">AI 文案 · Codex 產生</span></div><div class="inset"><p class="copytitle" id="copy-title">等待文案</p><p class="copybody empty" id="copy-body">尚無主流程提供的商品文案。</p></div></section>
+      <section class="card"><div class="sectionhead"><h2>操作紀錄</h2><span class="sectionmeta">主流程回報</span></div><ul class="timeline" id="events"></ul><p class="empty" id="events-empty">尚無回報紀錄。</p></section>
+    </div>
+    <div class="column">
+      <section class="card"><div class="sectionhead"><h2>真實頁面</h2><span class="sectionmeta">Chrome</span></div><h3 id="browser-title">等待頁面確認</h3><p class="content empty" id="browser-summary">Codex 的實際操作結果會由主流程更新至此。</p><div id="browser-location" hidden><p class="note">請切換到已開啟的 Chrome 商品分頁。</p><p class="note content" id="browser-url"></p></div></section>
+      <section class="card" id="execution-card" hidden><div class="sectionhead"><h2>展示方式</h2><span class="sectionmeta">第一階段</span></div><p class="content" id="execution-summary"></p><ul class="verification" id="execution-items"></ul></section>
+      <section class="card"><div class="sectionhead"><h2>待補資訊</h2><span class="sectionmeta" id="question-count">尚無問題</span></div><p class="note" style="margin-top:0">依真實頁面需要集中補答；儲存後請回 Codex 對話說「已補好，繼續」。</p><p class="empty" id="questions-empty">目前沒有主流程提出的待補問題。</p><form id="answer-form" novalidate><div id="questions"></div><div class="actions" id="answer-actions" hidden><button id="save" type="submit">儲存補答</button><span id="save-message" class="save-message" role="status" aria-live="polite"></span></div></form></section>
+      <section class="card"><div class="sectionhead"><h2>驗證</h2><span class="sectionmeta" id="verify-status">待進行</span></div><p class="content empty" id="verification">尚無驗證結果。</p><ul class="verification" id="verification-items"></ul></section>
+    </div>
+  </div>
+  <footer class="footer"><span>本機展示控制室 · 進度由 Codex 回報 · 補答僅存於本輪本機資料</span><span>實際商品狀態以蝦皮頁面為準。</span></footer>
+</main>
+<script>
+const steps=[['persona','Persona','研究與定位'],['copy','商品與文案','確認型號、生成內容'],['browser','真實蝦皮','Chrome 操作'],['questions','補充資訊','依頁面集中確認'],['verify','保存驗證','重新讀回實際結果']];
+const names={pending:'待進行',running:'進行中',waiting:'待補充',done:'已完成',blocked:'待處理'};
+const $=id=>document.getElementById(id);let session={},saved={},questionKey='',inputs=new Map(),dirty=new Set(),submitting=false,questionSignature='';
+function text(id,value,fallback=''){const element=$(id);element.textContent=typeof value==='string'&&value?value:fallback;element.classList.toggle('empty',!value)}
+function date(value,withDate=false){if(!value)return '';const d=new Date(value);return Number.isNaN(d.getTime())?'':d.toLocaleString('zh-TW',withDate?{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}:{hour:'2-digit',minute:'2-digit',hour12:false})}
+function list(id,items){const el=$(id);el.replaceChildren();for(const item of Array.isArray(items)?items:[]){if(typeof item!=='string')continue;const li=document.createElement('li');li.textContent=item;el.append(li)}}
+function renderQuestions(questions,answers){
+  const signature=JSON.stringify([session.run_id,questions]);
+  if(signature!==questionKey){
+    const sameRun=questionSignature===session.run_id;const drafts=new Map([...inputs].filter(([id])=>sameRun&&dirty.has(id)).map(([id,field])=>[id,field.value]));
+    questionKey=signature;questionSignature=session.run_id;inputs=new Map();dirty=new Set(drafts.keys());$('questions').replaceChildren();$('save-message').textContent='';
+    for(const q of questions){const row=document.createElement('div');row.className='question';const label=document.createElement('label');const inputId='question-'+inputs.size;label.htmlFor=inputId;label.textContent=q.label||q.id;
+      if(q.required){const mark=document.createElement('span');mark.className='required';mark.textContent='需確認';label.append(mark)}row.append(label);
+      if(q.help){const help=document.createElement('small');help.textContent=q.help;help.id=inputId+'-help';row.append(help)}
+      const field=document.createElement(q.type==='select'?'select':q.type==='textarea'?'textarea':'input');field.id=inputId;field.name=q.id;if(q.help)field.setAttribute('aria-describedby',inputId+'-help');
+      if(q.type==='select'){for(const option of ['',...(Array.isArray(q.options)?q.options:[])]){const el=document.createElement('option');el.value=option;el.textContent=option||'請選擇';field.append(el)}}else{field.maxLength=12000;field.autocomplete='off'}
+      field.value=drafts.has(q.id)?drafts.get(q.id):(answers[q.id]?.value||'');field.addEventListener('input',()=>{dirty.add(q.id);$('save-message').textContent='尚未儲存';$('save-message').classList.remove('error')});row.append(field);$('questions').append(row);inputs.set(q.id,field);
+    }
+  }else{for(const [id,field] of inputs)if(!dirty.has(id))field.value=answers[id]?.value||''}
+  $('questions-empty').hidden=questions.length>0;$('answer-actions').hidden=!questions.length;$('question-count').textContent=questions.length?questions.length+' 項待確認':'尚無問題';
+}
+function render(data){
+  session=data.session||{};saved=data.answers?.answers||{};
+  text('title',session.title,'從 Persona 洞察，到真實商品頁');text('summary',session.summary,'等待主流程提供展示進度。此頁顯示實際回報，不會自行執行瀏覽器操作。');text('run',session.run_id?'展示輪次 '+session.run_id:'','尚未開始');text('updated',session.updated_at?'更新於 '+date(session.updated_at,true):'','等待進度資料');
+  $('stages').replaceChildren();for(const [index,[id,label,hint]] of steps.entries()){const state=(session.stages||[]).find(s=>s.id===id)||{};const status=Object.hasOwn(names,state.status)?state.status:'pending';const item=document.createElement('div');item.className='stage '+status;if(session.current_stage===id)item.setAttribute('aria-current','step');const head=document.createElement('div');head.className='stagehead';const num=document.createElement('span');num.className='stepnum';num.textContent=String(index+1).padStart(2,'0');const badge=document.createElement('span');badge.className='tag';badge.textContent=names[status];head.append(num,badge);const title=document.createElement('b');title.textContent=label;const detail=document.createElement('p');detail.textContent=state.detail||hint;item.append(head,title,detail);$('stages').append(item)}
+  text('persona-title',session.persona?.title,'等待 Persona 資料');text('persona-summary',session.persona?.summary,'研究結果會在主流程載入後顯示。');list('evidence',session.persona?.evidence);text('persona-note',session.persona?.label,'Persona 研究用於內部定位，不作為此商品的消費者評價。');
+  $('product-card').hidden=!session.product?.title;text('product-title',session.product?.title);text('product-summary',session.product?.summary);text('product-source',session.product?.source,'使用者資料');list('product-facts',session.product?.facts);text('product-reference',session.product?.reference_note);
+  $('execution-card').hidden=!session.execution?.summary;text('execution-summary',session.execution?.summary);list('execution-items',session.execution?.items);
+  text('copy-title',session.copy?.title,'等待文案');text('copy-body',session.copy?.body,'尚無主流程提供的商品文案。');text('browser-title',session.browser?.title,'等待頁面確認');text('browser-summary',session.browser?.summary,'Codex 的實際操作結果會由主流程更新至此。');
+  $('browser-location').hidden=true;try{const url=new URL(session.browser?.url);if(['http:','https:'].includes(url.protocol)){text('browser-url',url.href);$('browser-location').hidden=false}}catch{}
+  renderQuestions(Array.isArray(session.questions)?session.questions:[],saved);text('verification',session.verification?.summary,'尚無驗證結果。');list('verification-items',session.verification?.items);text('verify-status',names[(session.stages||[]).find(s=>s.id==='verify')?.status]||'待進行');
+  const events=Array.isArray(session.events)?session.events:[];$('events').replaceChildren();for(const event of [...events].reverse()){const row=document.createElement('li');const time=document.createElement('time');time.textContent=date(event.at);const message=document.createElement('span');message.textContent=event.message||'';row.append(time,message);$('events').append(row)}$('events-empty').hidden=!!events.length;
+}
+async function refresh(){if(submitting)return;try{const response=await fetch('/api/state',{cache:'no-store'});const data=await response.json();if(!response.ok)throw Error(data.error);render(data);text('connection','即時更新');$('connection').classList.remove('connection-error')}catch{ text('connection','連線中斷 · 自動重試');$('connection').classList.add('connection-error')}}
+$('answer-form').addEventListener('submit',async event=>{event.preventDefault();if(submitting||!session.run_id)return;const submitted=Object.fromEntries([...inputs].map(([id,field])=>[id,field.value]));const runId=session.run_id;submitting=true;$('save').disabled=true;for(const field of inputs.values())field.disabled=true;$('save-message').textContent='儲存中…';$('save-message').classList.remove('error');try{const response=await fetch('/api/answers',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({run_id:runId,answers:submitted})});const data=await response.json();if(!response.ok)throw Error(data.error||'無法儲存');dirty.clear();saved=data.answers.answers;$('save-message').textContent='已儲存 · 請回對話說「已補好，繼續」'}catch(error){$('save-message').textContent=error.message||'儲存失敗，請重試';$('save-message').classList.add('error')}finally{submitting=false;$('save').disabled=false;for(const field of inputs.values())field.disabled=false}});
+window.addEventListener('beforeunload',event=>{if(dirty.size){event.preventDefault();event.returnValue=''}});render({});refresh();setInterval(refresh,1500);
+</script>
+</body>
+</html>

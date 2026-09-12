@@ -1,0 +1,54 @@
+{
+  "personaBrief": "開放式耳機 | 需要保持環境感知的父母／照護者 | 13 則命中，全部 Verified Purchase | Missed Buyer",
+  "product": {
+    "title": "開放式耳機",
+    "categoryPath": ["影音", "耳機/耳麥/藍牙耳機"],
+    "brand": null,
+    "model": null,
+    "condition": null,
+    "gtin": null,
+    "noValidGtin": null
+  },
+  "persona": {
+    "audience": ["需要保持環境感知的父母／照護者"],
+    "useCases": ["照護時希望留意周遭動靜"],
+    "painPoints": ["選購耳機時在意環境聲音的察覺"],
+    "positioning": "以父母／照護者的選購需求為出發點",
+    "competitors": []
+  },
+  "content": {
+    "description": null,
+    "highlights": [],
+    "keywords": []
+  },
+  "compliance": {
+    "hasBSMI": null,
+    "hasNCC": null,
+    "bsmiNumber": null,
+    "nccNumber": null,
+    "warrantyPeriod": null,
+    "packageContents": null
+  },
+  "sales": {"price": null, "stock": null},
+  "shipping": {
+    "weightKg": null,
+    "packageSizeCm": {"width": null, "length": null, "height": null},
+    "dangerousGoods": null
+  },
+  "media": {
+    "imagePaths": ["demo-0.png", "demo-1.png"],
+    "referenceImagePaths": ["demo-0.png", "demo-1.png"],
+    "referenceOnly": true,
+    "confirmedProductImages": false,
+    "uploadAuthorized": true
+  },
+  "research": {
+    "internalOnly": true,
+    "matchedReviewCount": 13,
+    "allMatchedReviewsVerifiedPurchase": true,
+    "buyerSegment": "Missed Buyer",
+    "reviewUseNote": "此為 Persona 研究摘要，未證實為本次販售商品的評論，不得宣稱本商品有 13 則 Verified Purchase 評論。",
+    "imageQualityNote": "demo-0.png 是多品牌／多商品拼圖；demo-1.png 是單組耳機外觀參考，兩者皆無法建立實際販售商品 SKU、品牌、型號或規格。"
+  },
+  "automation": {"mode": "draft_only", "allowPublish": false}
+}

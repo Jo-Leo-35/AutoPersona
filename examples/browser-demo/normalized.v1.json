@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "exampleId": "open-ear-caregiver-demo",
+  "listing": {
+    "product": {
+      "title": "開放式耳機｜父母與照護者選購參考",
+      "categoryPath": [
+        "影音",
+        "耳機/耳麥/藍牙耳機"
+      ],
+      "brand": null,
+      "model": null,
+      "condition": null,
+      "gtin": null,
+      "noValidGtin": null
+    },
+    "persona": {
+      "audience": [
+        "需要保持環境感知的父母／照護者"
+      ],
+      "useCases": [
+        "照護時希望留意周遭動靜"
+      ],
+      "painPoints": [
+        "選購耳機時在意環境聲音的察覺"
+      ],
+      "positioning": "以父母／照護者的選購需求為出發點",
+      "competitors": []
+    },
+    "content": {
+      "description": "給需要留意周遭動靜的父母與照護者，整理開放式耳機的選購方向。\n\n照護日常中，除了個人的聆聽需求，也會在意環境聲音的察覺。選購時，可先釐清使用情境，再依已確認的商品資料評估。\n\n商品規格、包裝內容與保固資訊，請以後續確認的實際商品資料為準。",
+      "highlights": [
+        "選購考量：照護時希望留意周遭動靜",
+        "選購考量：在意環境聲音的察覺"
+      ],
+      "keywords": [
+        "開放式耳機",
+        "父母",
+        "照護者",
+        "環境感知"
+      ]
+    },
+    "compliance": {
+      "hasBSMI": null,
+      "hasNCC": null,
+      "bsmiNumber": null,
+      "nccNumber": null,
+      "warrantyPeriod": null,
+      "warrantyType": null,
+      "packageContents": null,
+      "connectionType": null,
+      "headphoneType": null
+    },
+    "sales": {
+      "price": null,
+      "stock": null,
+      "minPurchaseQty": null
+    },
+    "shipping": {
+      "weightKg": null,
+      "packageSizeCm": {
+        "width": null,
+        "length": null,
+        "height": null
+      },
+      "dangerousGoods": null
+    },
+    "media": {
+      "imagePaths": [],
+      "videoPath": null,
+      "referenceImagePaths": [
+        "demo-0.png",
+        "demo-1.png"
+      ],
+      "referenceOnly": true,
+      "confirmedProductImages": false,
+      "uploadAuthorized": false
+    },
+    "research": {
+      "internalOnly": true,
+      "matchedReviewCount": 13,
+      "allMatchedReviewsVerifiedPurchase": true,
+      "buyerSegment": "Missed Buyer",
+      "reviewUseNote": "命中數與 Verified Purchase 是內部受眾研究摘要，未證實為本次販售商品的評論；不得用作商品評價或銷售證明。",
+      "imageQualityNote": "demo-0.png 為多品牌合照；demo-1.png 為單組黑色耳掛耳機與充電盒的外觀參考。兩圖皆不能建立 SKU、品牌、型號或規格。",
+      "mediaAuthorizationNote": "本回合使用者僅稱參考圖片；不沿用舊範例的 uploadAuthorized=true。",
+      "sourceStatement": "本範例的受眾與研究摘要來自使用者提供資料；商品身分與販售事實尚待確認。",
+      "categorySourceNote": "2026-09-12 本次真實賣家表單已確認此分類選項；後續使用時仍需核對當下頁面。",
+      "personaBrief": "開放式耳機 | 需要保持環境感知的父母／照護者 | 13 則命中，全部 Verified Purchase | Missed Buyer"
+    },
+    "automation": {
+      "mode": "draft_only",
+      "allowPublish": false
+    }
+  }
+}

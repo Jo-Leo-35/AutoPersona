@@ -1,0 +1,474 @@
+{
+  "internalOnly": true,
+  "status": "superseded",
+  "applyToStorefront": false,
+  "supersededBy": "使用者明確指定 JBuds OPEN SPORT，且代理商該型號規格與左右耳 NCC 均吻合。先前圖片判為入耳式是錯誤推論。",
+  "previousResearch": {
+    "internalOnly": true,
+    "personaBrief": "開放式耳機 | 需要保持環境感知的父母／照護者 | 13 則命中，全部 Verified Purchase | Missed Buyer",
+    "matchedReviewCount": 13,
+    "allMatchedReviewsVerifiedPurchase": true,
+    "buyerSegment": "Missed Buyer",
+    "reviewUseNote": "保留原 Persona 研究；這 13 則命中不是本次 JLab 商品的評論或買家見證。",
+    "originalPersona": {
+      "audience": [
+        "需要保持環境感知的父母／照護者"
+      ],
+      "useCases": [
+        "照護時希望留意周遭動靜"
+      ],
+      "painPoints": [
+        "選購耳機時在意環境聲音的察覺"
+      ],
+      "positioning": "以父母／照護者的選購需求為出發點",
+      "competitors": []
+    },
+    "originalCategoryClaim": "開放式耳機",
+    "sourceStatement": "使用者已明確指定本次附圖為要販售的耳機；品牌與類型依附圖及官方來源比對，型號尚未確定。",
+    "imageAuthorization": {
+      "confirmedByUser": true,
+      "uploadAuthorizedByUser": true,
+      "scope": "本次 supplied-product.png；不延伸至舊 demo-0.png 或 demo-1.png。"
+    },
+    "imageEvidence": {
+      "path": "products/jlab-image-demo/supplied-product.png",
+      "sha256": "6bc9d141275098d2232ac9bc775719404310966e298a08b53b642d1e9353bfcb",
+      "observed": [
+        "JLab 圓形品牌標誌",
+        "黑色耳掛",
+        "突出入耳耳塞",
+        "左右分離耳機與充電盒"
+      ],
+      "notObservable": [
+        "精確型號與世代",
+        "序號或 SKU",
+        "藍牙版本",
+        "續航或電池狀況",
+        "防水等級",
+        "ANC 或環境音模式",
+        "NCC、BSMI",
+        "商品新舊與完整配件"
+      ]
+    },
+    "identityAssessment": {
+      "brand": "JLab",
+      "brandConfidence": "high_visual_identification",
+      "model": null,
+      "modelStatus": "not_uniquely_identified",
+      "conclusion": "可填品牌及耳掛入耳式真無線類型；尚不能把 GO Air Sport、JBuds Air Sport 或 GO Sport+ 寫成已確認型號。",
+      "neededForModelResolution": "實物或包裝上可讀的完整型號；藍牙配對名稱可作補充線索。"
+    },
+    "factsApplied": [
+      {
+        "path": "product.brand",
+        "value": "JLab",
+        "confidence": "high",
+        "basis": "使用者附圖耳機圓形標誌與 JLab 官方商品圖相符；屬圖片品牌辨識。",
+        "sourceIds": [
+          "go_air_product",
+          "jbuds_sport3_product"
+        ]
+      },
+      {
+        "path": "compliance.connectionType",
+        "value": "wireless",
+        "confidence": "high",
+        "basis": "圖中左右分離耳機與充電盒；相符 JLab 候選系列皆為真無線藍牙耳機。",
+        "sourceIds": [
+          "go_air_product",
+          "jbuds_sport3_product",
+          "go_sport_plus_product"
+        ]
+      },
+      {
+        "path": "page.headphoneType",
+        "value": "入耳式耳塞，帶耳掛",
+        "confidence": "high",
+        "basis": "附圖可見突出耳塞與耳廓外側掛鉤；耳掛是固定方式，不能因此稱開放式。",
+        "sourceIds": [
+          "go_air_product",
+          "jbuds_sport3_product"
+        ]
+      },
+      {
+        "path": "visual.color",
+        "value": "黑色",
+        "confidence": "high",
+        "basis": "使用者指定販售的附圖外觀。",
+        "sourceIds": []
+      }
+    ],
+    "modelCandidates": [
+      {
+        "brand": "JLab",
+        "model": "GO Air Sport",
+        "generation": "original GO Air Sport, not GO Sport+",
+        "confidence": "plausible_but_unconfirmed",
+        "match": "圓形品牌標誌、耳掛、入耳耳塞、真無線與充電盒形態相近。",
+        "limitation": "官方主圖盒體較扁、上蓋內面與附圖不同，尚未找到完全相同的構圖或可讀型號標籤；不能確定同型號。",
+        "sourceIds": [
+          "go_air_product",
+          "go_air_specs"
+        ],
+        "officialModelFactsOnly": {
+          "bluetoothVersion": "5.1",
+          "driverMm": 6,
+          "earbudPlaytimeHours": "8+",
+          "totalPlaytimeHours": "32+",
+          "chargePlug": "Type-A",
+          "ipRating": "IP55 (earbuds only)"
+        },
+        "applyToStorefront": false
+      },
+      {
+        "brand": "JLab",
+        "model": "JBuds Air Sport",
+        "generation": "3rd Gen",
+        "confidence": "plausible_but_unconfirmed",
+        "match": "同品牌圓形標誌與耳掛式真無線造型。",
+        "limitation": "官方 Gen 3 圖片的耳掛／機身與充電盒比例、前方多燈顯示與附圖不一致；不能指定 Gen 3 或由照片推定其他世代。",
+        "sourceIds": [
+          "jbuds_sport3_product"
+        ],
+        "officialModelFactsOnly": {},
+        "applyToStorefront": false
+      },
+      {
+        "brand": "JLab",
+        "model": "GO Sport+",
+        "generation": "GO Air Sport successor",
+        "confidence": "related_model_not_confirmed",
+        "match": "官網明確將其列為 GO Air Sport 後續款；外形相近的系列需避免規格混用。",
+        "limitation": "尚無本次商品的型號標籤或完全一致官方圖；新版資訊只用來辨別資料污染。",
+        "sourceIds": [
+          "go_sport_plus_product",
+          "go_air_product"
+        ],
+        "officialModelFactsOnly": {
+          "beAwareMode": true,
+          "bluetoothVersion": "5.3",
+          "totalPlaytimeHours": "35+"
+        },
+        "applyToStorefront": false
+      }
+    ],
+    "suitabilityAnalysis": {
+      "originalAudience": "需要保持環境感知的父母／照護者",
+      "originalNeed": "照護時希望留意周遭動靜",
+      "assessedProductType": "入耳式真無線耳機，帶耳掛",
+      "fit": "mismatch_with_original_open_ear_positioning",
+      "reason": "附圖可見入耳耳塞；耳掛不是開放式聲學設計的證據。原 Persona 研究不能直接證明本產品適合需要持續環境感知的照護情境。",
+      "ambientModeStatus": "unverified_for_this_item",
+      "doNotClaim": [
+        "開放式或不入耳",
+        "Be Aware 或環境音功能已確認",
+        "一定聽見哭聲或警報",
+        "照護／交通安全保證",
+        "13 則本商品驗證購買評論"
+      ],
+      "copyDecision": "商品文案改成已辨認的品牌、入耳式耳掛造型、真無線連線及黑色外觀；原受眾研究保存在 research，不當成這件商品的適配結論。",
+      "nextResearchHypothesis": "可另驗證偏好耳掛固定方式與真無線設計的使用者，尚不是已有研究證實的受眾。"
+    },
+    "comparisonImageSources": [
+      {
+        "candidate": "GO Air Sport",
+        "url": "https://www.jlab.com/cdn/shop/files/JLab-Go-AIr-Sport-True_Wireless-Sport-Earbuds-Graphite_0e7f4eeb-91ad-48ce-9c00-df3aa1b0b8de.jpg?v=1762446382&width=1946",
+        "usage": "comparison_only_not_uploaded"
+      },
+      {
+        "candidate": "JBuds Air Sport Gen 3",
+        "url": "https://www.jlab.com/cdn/shop/files/2-JBudsAirSport-min_4cbea735-7200-4384-9a3d-59d6575d2e7d.jpg?v=1762446274&width=1946",
+        "usage": "comparison_only_not_uploaded"
+      }
+    ],
+    "sources": [
+      {
+        "id": "go_air_product",
+        "title": "JLab GO Air Sport True Wireless Earbuds",
+        "url": "https://www.jlab.com/products/go-air-sport-true-wireless-earbuds-black",
+        "accessedOn": "2026-09-12",
+        "purpose": "官方品牌、系列名稱與商品照片；Tech Specs 混入 GO Sport+，不採作舊型號規格。"
+      },
+      {
+        "id": "go_air_specs",
+        "title": "GO Air Sport - Tech Specs",
+        "url": "https://help.jlab.com/pages/go-air-sport-tech-specs",
+        "accessedOn": "2026-09-12",
+        "purpose": "專屬舊型號規格頁；只能作候選型號資料，不表示已識別本次商品。"
+      },
+      {
+        "id": "jbuds_sport3_product",
+        "title": "JBuds Air Sport True Wireless Earbuds 3rd Generation Black",
+        "url": "https://www.jlab.com/products/jbuds-air-sport-true-wireless-earbuds-gen-3-black",
+        "accessedOn": "2026-09-12",
+        "purpose": "官方品牌、世代標示與商品照片；不能只憑系列相近移植功能。"
+      },
+      {
+        "id": "go_sport_plus_product",
+        "title": "JLab GO Sport+ True Wireless Earbuds",
+        "url": "https://www.jlab.com/en-gb/products/go-sport-plus-true-wireless-earbuds?bvstate=pg:2/ct:r&variant=44566563520644",
+        "accessedOn": "2026-09-12",
+        "purpose": "區分 GO Sport+ 與舊 GO Air Sport；新版功能不回填本次未確定型號。"
+      }
+    ],
+    "confirmedFactSources": {
+      "sales.price": {
+        "type": "user_message",
+        "quote": "價格是3990",
+        "value": 3990,
+        "currency": "TWD"
+      },
+      "compliance.hasNCC": {
+        "type": "user_message",
+        "value": true,
+        "verificationStatus": "user_provided_model_match_unresolved"
+      },
+      "compliance.nccNumber": {
+        "type": "user_message",
+        "value": "CCAH24LP3330T0",
+        "verificationStatus": "user_provided_model_match_unresolved",
+        "quote": "CCAH24LP3330T0"
+      },
+      "compliance.hasBSMI": {
+        "type": "user_message",
+        "value": true,
+        "verificationStatus": "user_provided_model_match_unresolved"
+      },
+      "compliance.bsmiNumber": {
+        "type": "user_message",
+        "value": "R3B170",
+        "verificationStatus": "user_provided_model_match_unresolved",
+        "quote": "R3B170"
+      }
+    },
+    "certificationReview": {
+      "internalOnly": true,
+      "checkedOn": "2026-09-12",
+      "status": "user_provided_model_match_unresolved",
+      "userProvided": {
+        "nccNumber": "CCAH24LP3330T0",
+        "bsmiNumber": "R3B170"
+      },
+      "valuesPreserved": true,
+      "independentGovernmentDatabaseMatchCompleted": false,
+      "sources": [
+        {
+          "id": "jc_go_tones_plus",
+          "url": "https://www.jcjucheng.com.tw/products/jlab-goair-tones-jc",
+          "sourceType": "retailer_product_page",
+          "modelInRelevantSection": "JLab Go TONES+",
+          "nccNumber": "CCAH24LP3330T0",
+          "bsmiNumber": "R3B170",
+          "note": "頁面同時保留舊 Go Air TONES 段落；這組字號位於 Go TONES+ 產品型號與規格段落。"
+        },
+        {
+          "id": "jc_go_pop_plus",
+          "url": "https://www.jcjucheng.com.tw/products/jlab-go-airpop-jc",
+          "sourceType": "retailer_product_page",
+          "modelInRelevantSection": "JLab Go POP+",
+          "nccNumber": "CCAH24LP3330T0",
+          "bsmiNumber": "R3B170",
+          "note": "字號位於 Go POP+ 規格段落；不能由相同字號把耳掛商品認定為此型號。"
+        },
+        {
+          "id": "igogosport_go_sport_plus",
+          "url": "https://store.igogosport.com/en/products/jlab-go-air-sport",
+          "sourceType": "taiwan_distributor_product_page",
+          "modelInRelevantSection": "JLab Go Sport+",
+          "nccNumber": "CCAH24LP3290T1",
+          "bsmiNumber": "R3B170",
+          "note": "代理頁的耳掛 Go Sport+ 列另一 NCC 字號；這是有待核對的差異，不把候選字號替換進現有資料。"
+        }
+      ],
+      "blockers": [
+        {
+          "code": "model_certificate_match_unresolved",
+          "severity": "blocking",
+          "paths": [
+            "product.model",
+            "compliance.hasNCC",
+            "compliance.nccNumber",
+            "compliance.hasBSMI",
+            "compliance.bsmiNumber"
+          ],
+          "reason": "使用者提供 NCC 字號出現在 GO TONES+／GO POP+ 規格段落，而附圖是耳掛造型且精確型號未定；代理 GO Sport+ 列不同 NCC。型號與字號一致性尚未成立。",
+          "resolution": "核對本次實物或包裝上完整型號及 NCC／BSMI 標示，再與該型號證明資料比對；不以其他候選號碼代填。",
+          "retainCurrentAnswers": true,
+          "remoteMutationAuthorizedByThisRecord": false
+        }
+      ],
+      "conclusion": "保留使用者原答案並明記來源；將型號與認證一致性列為未解決阻礙，不能把欄位已保存當成認證已完成獨立驗證。"
+    }
+  },
+  "previousConfirmedFacts": {
+    "schemaVersion": "1.0.0",
+    "answers": {
+      "sales.price": 3990,
+      "compliance.hasNCC": true,
+      "compliance.nccNumber": "CCAH24LP3330T0",
+      "compliance.hasBSMI": true,
+      "compliance.bsmiNumber": "R3B170"
+    },
+    "sources": {
+      "sales.price": {
+        "type": "user_message",
+        "quote": "價格是3990",
+        "value": 3990,
+        "currency": "TWD"
+      },
+      "compliance.hasNCC": {
+        "type": "user_message",
+        "value": true,
+        "verificationStatus": "user_provided_model_match_unresolved"
+      },
+      "compliance.nccNumber": {
+        "type": "user_message",
+        "value": "CCAH24LP3330T0",
+        "verificationStatus": "user_provided_model_match_unresolved",
+        "quote": "CCAH24LP3330T0"
+      },
+      "compliance.hasBSMI": {
+        "type": "user_message",
+        "value": true,
+        "verificationStatus": "user_provided_model_match_unresolved"
+      },
+      "compliance.bsmiNumber": {
+        "type": "user_message",
+        "value": "R3B170",
+        "verificationStatus": "user_provided_model_match_unresolved",
+        "quote": "R3B170"
+      }
+    }
+  },
+  "previousCertificationReview": {
+    "internalOnly": true,
+    "checkedOn": "2026-09-12",
+    "status": "user_provided_model_match_unresolved",
+    "userProvided": {
+      "nccNumber": "CCAH24LP3330T0",
+      "bsmiNumber": "R3B170"
+    },
+    "valuesPreserved": true,
+    "independentGovernmentDatabaseMatchCompleted": false,
+    "sources": [
+      {
+        "id": "jc_go_tones_plus",
+        "url": "https://www.jcjucheng.com.tw/products/jlab-goair-tones-jc",
+        "sourceType": "retailer_product_page",
+        "modelInRelevantSection": "JLab Go TONES+",
+        "nccNumber": "CCAH24LP3330T0",
+        "bsmiNumber": "R3B170",
+        "note": "頁面同時保留舊 Go Air TONES 段落；這組字號位於 Go TONES+ 產品型號與規格段落。"
+      },
+      {
+        "id": "jc_go_pop_plus",
+        "url": "https://www.jcjucheng.com.tw/products/jlab-go-airpop-jc",
+        "sourceType": "retailer_product_page",
+        "modelInRelevantSection": "JLab Go POP+",
+        "nccNumber": "CCAH24LP3330T0",
+        "bsmiNumber": "R3B170",
+        "note": "字號位於 Go POP+ 規格段落；不能由相同字號把耳掛商品認定為此型號。"
+      },
+      {
+        "id": "igogosport_go_sport_plus",
+        "url": "https://store.igogosport.com/en/products/jlab-go-air-sport",
+        "sourceType": "taiwan_distributor_product_page",
+        "modelInRelevantSection": "JLab Go Sport+",
+        "nccNumber": "CCAH24LP3290T1",
+        "bsmiNumber": "R3B170",
+        "note": "代理頁的耳掛 Go Sport+ 列另一 NCC 字號；這是有待核對的差異，不把候選字號替換進現有資料。"
+      }
+    ],
+    "blockers": [
+      {
+        "code": "model_certificate_match_unresolved",
+        "severity": "blocking",
+        "paths": [
+          "product.model",
+          "compliance.hasNCC",
+          "compliance.nccNumber",
+          "compliance.hasBSMI",
+          "compliance.bsmiNumber"
+        ],
+        "reason": "使用者提供 NCC 字號出現在 GO TONES+／GO POP+ 規格段落，而附圖是耳掛造型且精確型號未定；代理 GO Sport+ 列不同 NCC。型號與字號一致性尚未成立。",
+        "resolution": "核對本次實物或包裝上完整型號及 NCC／BSMI 標示，再與該型號證明資料比對；不以其他候選號碼代填。",
+        "retainCurrentAnswers": true,
+        "remoteMutationAuthorizedByThisRecord": false
+      }
+    ],
+    "conclusion": "保留使用者原答案並明記來源；將型號與認證一致性列為未解決阻礙，不能把欄位已保存當成認證已完成獨立驗證。"
+  },
+  "previousIdentityFollowup": {
+    "internalOnly": true,
+    "applyToStorefront": false,
+    "checkedOn": "2026-09-12",
+    "suppliedImage": "products/jlab-image-demo/supplied-product.png",
+    "modelConclusion": {
+      "model": null,
+      "status": "not_uniquely_identified_after_extended_comparison",
+      "reason": "新增官方圖能證明造型相近，但沒有找到與附圖完整吻合的盒體、指示燈排列及耳機細節；不能指定 Epic Air Sport ANC 或其世代。"
+    },
+    "comparisons": [
+      {
+        "candidate": "Epic Air Sport ANC Gen 2",
+        "confidence": "plausible_family_not_exact_match",
+        "applyToStorefront": false,
+        "sourceUrl": "https://www.jlab.com/products/epic-air-sport-anc-true-wireless-earbuds-gen-2-black",
+        "officialImageUrl": "https://www.jlab.com/cdn/shop/files/epic-air-sport-anc-true-wireless-earbuds-gen-2_a15c56b0-5ec1-49d8-8832-427f050d5d24.jpg?v=1762446278&width=1946",
+        "inspectedLocalImage": "work/product-research/jlab-candidate-images/official-epic-air-sport-anc-gen2.jpg",
+        "similarities": [
+          "圓形金屬質感品牌徽標",
+          "耳掛與入耳耳塞",
+          "黑色真無線耳機與盒"
+        ],
+        "differencesOrGaps": [
+          "官方圖盒前緣有橫排四個 LED，附圖可見盒正面中央單藍點",
+          "官方內蓋是連續大凹面，附圖左右雙凹面不同",
+          "官方耳機機身可見多個小開孔，附圖解析度不足以精確對照"
+        ],
+        "decision": "保留候選；不依外觀相近升級成確定型號。"
+      },
+      {
+        "candidate": "Epic Air Sport ANC original-era / V1",
+        "confidence": "historical_design_comparison_only",
+        "applyToStorefront": false,
+        "sourceUrl": "https://www.jlab.com/en-au/blogs/news/jlab-wins-ces-innovation-award",
+        "sourceArticleDate": "2020-12-15",
+        "officialImageUrl": "https://www.jlab.com/cdn/shop/articles/CES_2021_Innovation_Awards_Blog_Header.png?v=1607984394&width=1920",
+        "inspectedLocalImage": "work/product-research/jlab-candidate-images/official-2020-ces-epic-series.png",
+        "observations": [
+          "文章同時展示有長柄的 Epic Air ANC 與有耳掛的 Epic Air Sport ANC；不能混淆二者",
+          "耳掛款盒體較扁、內蓋為單一大凹面，耳機有金屬邊小孔；仍與附圖非精確匹配"
+        ],
+        "decision": "歷史官方文章提供原系列外觀線索，不能把文章年份當作這件商品的世代證明。"
+      },
+      {
+        "candidate": "Epic Air Sport / Epic Air Elite (2019, non-ANC names)",
+        "confidence": "related_legacy_models_not_selected",
+        "applyToStorefront": false,
+        "sourceUrl": "https://www.jlab.com/blogs/news/epic-air-sport-compared-to-the-epic-air-elite",
+        "sourceArticleDate": "2019-06-11",
+        "officialImageUrl": "https://cdn.shopify.com/s/files/1/0240/9337/files/Epic-Air-Elite_Sport-Comparison-Chart.jpg?v=1560195254",
+        "inspectedLocalImage": "work/product-research/jlab-candidate-images/official-2019-elite-sport-comparison.jpg",
+        "observations": [
+          "官方文中說明兩款耳機外觀相近，需從盒體及控制方式區分",
+          "比較圖可見耳掛鏤空結構，不能直接視為本圖的相同型號",
+          "Epic Air Sport 與 Epic Air Sport ANC 名稱不同，不互借規格與認證"
+        ],
+        "decision": "補列區分脈絡，不新增商店型號主張。"
+      }
+    ],
+    "sharedSupportSource": {
+      "url": "https://help.jlab.com/pages/epic-air-sport-anc-v1-v2-tech-specs",
+      "meaning": "官方將 V1/V2 合併在一頁；這是系列支援資料，不能據此辨認附圖世代。"
+    },
+    "certificationHandling": {
+      "currentInputBasis": "user_provided",
+      "nccNumber": "CCAH24LP3330T0",
+      "bsmiNumber": "R3B170",
+      "verificationStatus": "user_provided_model_match_unresolved",
+      "note": "已依使用者提供值填入正式契約；此視覺研究不宣稱這組字號已和精確型號完成官方匹配。",
+      "reviewFile": "products/jlab-image-demo/certification-review.json"
+    }
+  }
+}
