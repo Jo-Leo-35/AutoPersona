@@ -1,6 +1,24 @@
 # AutoPersona
 
+**繁體中文** | [English](README.en.md)
+
 將 Persona 研究整理成商品草稿，依蝦皮賣家中心的實際欄位補齊資料，再核對操作結果。商品事實、行銷文案與內部研究分開保存；未知品牌、型號、價格、規格與認證不自動補造。
+
+流程為：**Persona JSON → 商品文案 → 可見瀏覽器填表 → 缺漏補答 → 儲存後核對**。目前可用於台灣蝦皮賣家中心的黑客松展示與既有商品更新。
+
+## 環境準備
+
+直接由 Codex 操作 Chrome 時，需要可見的 Chrome、可用的瀏覽器工具及蝦皮賣家登入。Python 控制室與 JSON 整理需要 Python 3.9 以上；Python 自動化另外需要 Playwright。早期 JavaScript 流程與其測試使用 Node.js 20 以上。
+
+在專案根目錄安裝 Python 自動化與選用錄影依賴：
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-video.txt
+.venv/bin/python -m playwright install chromium
+```
+
+已有 `.venv` 時可沿用。一般 JSON 重播不需要 API key；需要 AI 生成時，將 [.env.example](.env.example) 複製為本機 `.env` 並設定 `OPENAI_API_KEY` 或 `GPT-API`，以 `OPENAI_MODEL` 選擇模型。不要覆蓋既有 `.env` 或將金鑰寫入程式碼。
 
 ## 從真實 Chrome 展示開始
 
@@ -25,7 +43,23 @@ python3 demo-control/server.py --port 8767
 
 要從 JSON 直接執行有視窗的自動化，可用 `shopee_run.py`：支援既有商品 ID、登入後續接、補答及單次提交。[腳本操作說明](docs/SHOPEE_SCRIPT.md)
 
-本輪 OPEN SPORT 的簡化入口是 `python3 run_open_sport.py --publish --fullscreen`：自動選用專案虛擬環境、正式 JSON 與既有商品 ID，預設不加逐步操作延遲。只檢查輸入可用 `python3 run_open_sport.py --prepare-only`。省略 `--publish` 會填表並停在保存前；專用 Chrome 若需要登入，完成登入後在終端機按 Enter 續接。
+先用以下命令檢查 OPEN SPORT 範例，不開啟瀏覽器、不提交商品：
+
+```sh
+python3 run_open_sport.py --prepare-only
+```
+
+同一個 Demo 商品已獲授權更新／重新上架時，可快速重播：
+
+```sh
+python3 run_open_sport.py --publish --fullscreen --wait-for-resume --hold-open 40
+```
+
+此簡化入口固定使用 OPEN SPORT JSON 與既有商品 ID `43834400022`，自動選用專案虛擬環境；只適用於這件 Demo 商品。一般商品請以 `shopee_run.py --input PATH_TO_JSON --product-id CONFIRMED_PRODUCT_ID` 指定自己的資料與 ID；只有確定要新增商品時才省略 `--product-id`。
+
+省略 `--publish` 只填表核對。預設 `--slow-mo 0`，錄影需要較慢節奏可加 `--slow-mo 150`。`--hold-open 40` 在完成後保留畫面 40 秒。既有商品的 JSON 價格／庫存為 `null` 時保留現場值，並於保存後重新核對。
+
+使用 `--wait-for-resume` 時，登入或補答完成後向終端顯示的本輪資料目錄寫入 `resume.json`，內容為 `{"action":"resume"}`；新答案可放在 `answers` 物件中。互動式終端可省略這個旗標，以 Enter 續接。每輪至多提交一次，結果不明時只查核同一商品。完整操作見 [腳本說明](docs/SHOPEE_SCRIPT.md)。
 
 | 入口 | 用途 | 控制頁／結果 |
 | --- | --- | --- |
@@ -39,11 +73,38 @@ Python Beta 的安裝、AI／離線差異與命令見 [Python Beta 說明](docs/
 
 ## 可重複使用的 Skill
 
-[autopersona-listing](skills/autopersona-listing/SKILL.md) 整理了 Persona JSON、可見 Chrome、Python 快跑、補答續接與錄影核對。可在 Codex 指定讀取此 Skill；安裝成個人 Skill 後，以 `$autopersona-listing` 呼叫。Skill 需搭配此專案，使用者指定的專案位置優先。
+[autopersona-listing](.codex/skills/autopersona-listing/SKILL.md) 整理了 Persona JSON、可見 Chrome、Python 快跑、補答續接與錄影核對。原始檔放在專案 `.codex/skills`，由 `.agents/skills` 的相對連結提供 Codex 專案載入，兩個路徑指向同一份內容。[Codex Skill 載入文件](https://learn.chatgpt.com/docs/build-skills)
+
+```text
+.codex/skills/autopersona-listing/
+├── SKILL.md
+├── agents/openai.yaml
+└── references/
+    ├── chrome-demo.md
+    ├── python-run.md
+    └── python-dashboard.md
+.agents/skills/autopersona-listing -> ../../.codex/skills/autopersona-listing
+```
+
+在此專案的 Codex 任務中使用 `$autopersona-listing`，或明確指定讀取 `.codex/skills/autopersona-listing/SKILL.md`。若新的 Skill 未出現，可重新啟動 Codex。Skill 需搭配此專案，使用者指定的專案位置優先。
 
 例如：「使用 autopersona-listing Skill，快速重播同一個 OPEN SPORT，錄影已開始，使用全螢幕。」Skill 會沿用已確認資料與發布授權；新商品不沿用範例商品 ID。
 
 2026-09-12 的 Python 真實快跑在 Google 登入限制處停止，之後由 Codex 操作已登入 Chrome 完成商品更新及保存核對。此結果不代表 Python 端到端發布已通過；[登入限制與續接](docs/SHOPEE_SCRIPT.md#google-登入限制實跑記錄) 保留完整說明。
+
+## 串接 Persona Engine
+
+隊友可依 [JSON Schema](examples/browser-demo/persona-input.schema.v1.json) 提供 `schemaVersion`、`exampleId` 與 `listing`；使用 [輸入範本](examples/browser-demo/persona-input.template.v1.json) 或 [OPEN SPORT 範例](products/jlab-open-sport-demo/persona-input.v1.json) 開始。
+
+| `listing` 區塊 | 資料用途 |
+| --- | --- |
+| `product`、`compliance` | 型號、品牌、已確認規格與認證 |
+| `persona` | 目標客群、情境、需求與文案定位 |
+| `content` | 商品描述、特色與關鍵字 |
+| `sales`、`shipping`、`media` | 販售、物流與圖片資料；未知值保持 `null` 或空陣列 |
+| `research` | 內部研究依據與來源，不直接作為商品評價 |
+
+輸入檔正規化範例見上方 Chrome 展示命令。OPEN SPORT 專用產生器為 `python3 products/jlab-open-sport-demo/prepare_open_sport.py`，產生 listing、欄位映射、待補問題、瀏覽器 handoff 與純文字文案；產生檔案本身不代表已操作商品頁。[完整串接說明](docs/OPEN_SPORT_PERSONA.md)
 
 ## 資料與錄影
 

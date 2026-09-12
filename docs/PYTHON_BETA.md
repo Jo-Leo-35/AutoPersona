@@ -107,4 +107,4 @@ python record_demo.py --url http://127.0.0.1:8765 \
 
 測試涵蓋未知事實保留、答案型別、模型輸出邊界、設定遮蔽與流程狀態。瀏覽器整合測試使用本機 fixture，需 Playwright 與 Chromium；缺少 Playwright 時會略過該整合測試。
 
-[`skills/autopersona-listing/SKILL.md`](../skills/autopersona-listing/SKILL.md) 是既有 Python Beta skill 草稿，保留供後續整合。第一階段 Codex 操作 Chrome 的觀察，需經實站驗證後再整理成可重用規則。
+[`.codex/skills/autopersona-listing/SKILL.md`](../.codex/skills/autopersona-listing/SKILL.md) 是可重複使用的上架 Skill，涵蓋真實 Chrome、Python 快跑與控制台續接。專案 `.agents/skills/autopersona-listing` 連到同一份來源，提供 Codex 載入；實際驗證範圍與登入限制記錄在 Skill 及操作文件中。

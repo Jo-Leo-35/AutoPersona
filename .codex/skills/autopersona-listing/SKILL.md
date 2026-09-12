@@ -5,7 +5,7 @@ description: Use AutoPersona to turn Persona Engine JSON and supplied product fa
 
 # AutoPersona 商品上架
 
-將 Persona 洞察轉成商品文案，在使用者看得到的蝦皮賣家中心完成填寫、補答與結果核對。此 Skill 依賴 AutoPersona 專案；先找到包含 `shopee_run.py`、`autopersona_py/` 的專案根目錄。目前位置為 `/Users/etahn/Ethan_file/AutoPersona`，使用者指定的新位置優先。下列程式與資料路徑均相對於專案根目錄。
+將 Persona 洞察轉成商品文案，在使用者看得到的蝦皮賣家中心完成填寫、補答與結果核對。此 Skill 依賴 AutoPersona 專案；先找到包含 `shopee_run.py`、`autopersona_py/` 的專案根目錄。從此 Skill 的實體位置往上尋找專案根目錄；若 Skill 已另行安裝，使用者指定的專案位置優先。下列程式與資料路徑均相對於專案根目錄。
 
 ## 選擇入口
 

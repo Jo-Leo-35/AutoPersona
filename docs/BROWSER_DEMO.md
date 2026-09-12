@@ -99,4 +99,4 @@ node --test
 
 Python 瀏覽器測試操作本機 fixture；它們驗證邏輯與續接，不能當成真實蝦皮發布成功的證據。`.env`、`work/`、`.autopersona/`、`artifacts/` 與瀏覽器登入 profile 均排除於 Git。第一階段不需要額外 AI API 呼叫。
 
-既有 `skills/autopersona-listing/SKILL.md` 保留。實站驗證後再把分類、屬性、圖片、補答續接與成功判定整合回 Python Beta；每次仍需依當前頁面確認。
+[上架 Skill](../.codex/skills/autopersona-listing/SKILL.md) 已整理可見 Chrome、Python 快跑、補答續接、錄影與保存核對。原始檔位於 `.codex/skills`，由 `.agents/skills` 的相對連結供 Codex 載入；每次仍需依當前頁面確認。

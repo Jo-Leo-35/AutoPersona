@@ -109,7 +109,7 @@ python3 demo-control/server.py --port 8767
 
 ## 可重複 Skill
 
-既有 [AutoPersona Listing Skill](../skills/autopersona-listing/SKILL.md) 已加入第一階段可見 Chrome 的操作路由，並通過 Skill 結構檢查。續跑時優先遵循實際頁面證據與單一瀏覽器操作者的安排。Python／Playwright Beta 的實站端到端尚未經本輪驗證。
+[AutoPersona Listing Skill](../.codex/skills/autopersona-listing/SKILL.md) 已加入可見 Chrome、Python 快跑與控制台續接路由，並通過 Skill 結構檢查。Skill 原始檔位於 `.codex/skills`，由 `.agents/skills` 的相對連結供 Codex 載入。續跑時優先遵循實際頁面證據與單一瀏覽器操作者的安排。Python／Playwright Beta 的實站端到端尚未經本輪驗證。
 
 ## 本輪實站驗證紀錄
 

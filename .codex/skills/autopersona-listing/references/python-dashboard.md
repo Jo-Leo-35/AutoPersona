@@ -4,7 +4,7 @@
 
 ## Locate and prepare
 
-Find the project containing `autopersona.py` and `autopersona_py/`. This installation is at `/Users/etahn/Ethan_file/AutoPersona`; use the user's project location if it has moved. Read `docs/PYTHON_BETA.md` for installation and the JSON contract only when needed.
+Find the project containing `autopersona.py` and `autopersona_py/`. Resolve the project from the skill's real path or the user's supplied project location. Read `docs/PYTHON_BETA.md` for installation and the JSON contract only when needed.
 
 Write the user's supplied facts and Persona text into `.autopersona/inputs/<name>.json` inside the project. Accept a full nested JSON object, a `listing` wrapper, or `{"personaBrief": "<user text>"}`. Use `examples/open-ear-headphones.json` to understand field names; do not copy its product or image paths into an unrelated listing. Relative image paths resolve from the project root. Copy explicitly supplied product images into a product folder when they are outside the project.
 
