@@ -1,0 +1,19 @@
+{
+  "name": "autopersona",
+  "version": "0.1.0",
+  "description": "Semi-automated Shopee listing assistant powered by persona-driven copy and Playwright form filling.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "draft": "node src/cli.js draft products/example-shure-sm58/product.json",
+    "validate": "node src/cli.js validate products/example-shure-sm58/product.json",
+    "fill": "node src/cli.js fill products/example-shure-sm58/product.json",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "playwright": "^1.56.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

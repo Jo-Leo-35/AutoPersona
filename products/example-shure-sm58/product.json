@@ -1,0 +1,58 @@
+{
+  "product": {
+    "title": "Shure SM58 手持麥克風｜社區志工・活動主持・導覽宣導｜輕巧好攜帶",
+    "categoryPath": ["影音", "麥克風"],
+    "brand": "SHURE 舒爾",
+    "model": "SM58",
+    "condition": "used",
+    "noValidGtin": false
+  },
+  "persona": {
+    "audience": ["社區志工", "活動主持", "社區導覽人員", "里民活動工作人員"],
+    "useCases": [
+      "社區志工活動",
+      "社區導覽與解說",
+      "里民大會",
+      "活動主持",
+      "宣導活動",
+      "現場人員引導",
+      "需要經常移動位置的使用者"
+    ],
+    "painPoints": [
+      "活動現場需要來回移動",
+      "臨時活動需要快速拿出來使用",
+      "不想準備過於複雜的音響設備"
+    ],
+    "positioning": "方便攜帶、活動現場快速使用、適合需要移動的社區工作情境",
+    "competitors": []
+  },
+  "content": {},
+  "compliance": {
+    "hasBSMI": false,
+    "hasNCC": false
+  },
+  "sales": {
+    "price": 7999,
+    "stock": 1,
+    "minPurchaseQty": 1
+  },
+  "shipping": {
+    "weightKg": 0.3,
+    "packageSizeCm": {
+      "width": 30,
+      "length": 30,
+      "height": 30
+    },
+    "dangerousGoods": false
+  },
+  "media": {
+    "imagePaths": [
+      "images/shure-sm58-main.png",
+      "images/shure-sm58-box.png"
+    ]
+  },
+  "automation": {
+    "mode": "draft_only",
+    "allowPublish": false
+  }
+}
